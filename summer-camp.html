@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Camp Business Toolkit — Website, Forms, Products & Guides | NicheToolkitHub</title>
+<meta name="description" content="Everything you need to start and grow a summer camp business. Professional website template, business toolkit, curated Amazon products, and expert guides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<style>
+:root{--bg:#0a0a0f;--bg-alt:#12121a;--gold:#c9a96e;--gold-light:#e6cfa1;--text:#f5f5f7;--text-dim:#a8a8b3;--border:rgba(201,169,110,0.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+nav.top{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,15,0.6);border-bottom:1px solid var(--border);transition:all .3s ease;}
+nav.top .inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+nav.top .logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);white-space:nowrap;}
+nav.top .logo span{color:var(--text);}
+nav.top .nav-pills{display:flex;gap:8px;list-style:none;align-items:center;}
+nav.top .nav-pills a{font-size:13px;color:var(--text-dim);padding:8px 18px;border:1px solid transparent;border-radius:999px;transition:all .25s;font-weight:500;white-space:nowrap;}
+nav.top .nav-pills a:hover{border-color:var(--border);color:var(--gold-light);}
+nav.top .nav-pills a.active{border-color:var(--gold);color:var(--gold);}
+nav.top .cta-nav{background:var(--gold);color:#0a0a0f;padding:10px 22px;border-radius:999px;font-weight:600;font-size:13px;transition:all .25s;white-space:nowrap;}
+nav.top .cta-nav:hover{background:var(--gold-light);transform:translateY(-1px);}
+header.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:140px 24px 80px;background:#0a0a0f;}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1472745942893-4b9f730c7668?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;}
+.hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,15,0.82) 0%,rgba(10,10,15,0.5) 40%,rgba(10,10,15,0.95) 100%);}
+.hero-content{text-align:center;max-width:880px;position:relative;z-index:2;animation:fadeUp 1.2s ease;}
+.hero-eyebrow{display:inline-block;padding:8px 20px;border:1px solid var(--border);border-radius:999px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:32px;backdrop-filter:blur(8px);background:rgba(10,10,15,0.4);}
+.hero h1{font-size:clamp(38px,6.5vw,80px);margin-bottom:24px;text-shadow:0 4px 30px rgba(0,0,0,0.6);}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.hero p{font-size:clamp(16px,1.5vw,19px);color:#e6e6ec;max-width:620px;margin:0 auto 40px;text-shadow:0 2px 20px rgba(0,0,0,0.6);}
+.hero-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:720px;margin:0 auto;}
+.hero-actions .btn-nav{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 12px;border-radius:16px;background:rgba(10,10,15,0.55);border:1px solid var(--border);backdrop-filter:blur(12px);color:var(--text);font-size:13px;font-weight:600;transition:all .3s ease;text-align:center;cursor:pointer;font-family:var(--sans);}
+.hero-actions .btn-nav:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.4);}
+.hero-actions .btn-nav .nav-icon{font-size:24px;line-height:1;}
+@media(max-width:600px){.hero-actions{grid-template-columns:repeat(2,1fr);max-width:340px;}}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:15px;transition:all .25s;cursor:pointer;border:none;font-family:inherit;}
+.btn-gold{background:var(--gold);color:#0a0a0f;}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,169,110,0.25);}
+.btn-ghost{background:rgba(10,10,15,0.5);color:var(--text);border:1px solid var(--border);backdrop-filter:blur(8px);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}
+.btn-sm{padding:12px 24px;font-size:14px;}
+section{padding:120px 0;position:relative;}
+.section-eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;font-family:var(--sans);font-weight:600;}
+.section-title{font-size:clamp(32px,5vw,52px);margin-bottom:24px;}
+.section-title em{font-style:italic;color:var(--gold-light);}
+.section-lead{color:var(--text-dim);font-size:17px;max-width:620px;margin-bottom:56px;line-height:1.7;}
+.bg-alt{background:var(--bg-alt);}
+.stats-banner{background:var(--bg-alt);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-banner .inner{text-align:center;max-width:800px;margin:0 auto;}
+.stats-banner h2{font-size:clamp(22px,3vw,30px);margin-bottom:16px;color:var(--text);}
+.stats-banner>div>.lead{color:var(--text-dim);font-size:16px;max-width:600px;margin:0 auto 48px;line-height:1.7;}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.stat-item{padding:28px;border:1px solid var(--border);border-radius:16px;background:rgba(255,255,255,0.02);}
+.stat-num{font-family:var(--serif);font-size:36px;color:var(--gold);font-weight:600;margin-bottom:4px;}
+.stat-label{font-size:13px;color:var(--text-dim);line-height:1.5;}
+.card{padding:32px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s ease;}
+.card:hover{transform:translateY(-4px);border-color:rgba(201,169,110,0.4);box-shadow:0 20px 60px rgba(0,0,0,0.3);}
+.website-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;}
+.mockup-wrap{aspect-ratio:16/10;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(135deg,#D4A017 0%,#B8860B 100%);display:flex;align-items:center;justify-content:center;position:relative;}
+.mockup-wrap::before{content:'';position:absolute;inset:0;background-image:linear-gradient(45deg,rgba(255,255,255,.05) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.05) 75%),linear-gradient(45deg,rgba(255,255,255,.05) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.05) 75%);background-size:60px 60px;background-position:0 0,30px 30px;}
+.mockup-inner{position:relative;z-index:1;text-align:center;color:#fff;}
+.coming-badge{display:inline-block;background:var(--gold);color:#0a0a0f;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:16px;}
+.benefits-list{list-style:none;}
+.benefits-list li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text);font-size:15px;display:flex;align-items:flex-start;gap:14px;}
+.benefits-list li:last-child{border-bottom:none;}
+.check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--gold);color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+.chart-wrap{background:var(--bg-alt);border:1px solid var(--border);border-radius:18px;padding:32px;margin:48px 0;}
+.chart-title{font-family:var(--serif);font-size:22px;color:var(--gold-light);margin-bottom:24px;}
+.toolkit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-bottom:56px;}
+.tk-card{padding:28px;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,0.02);border-left:3px solid var(--gold);transition:all .3s;}
+.tk-card:hover{border-color:rgba(201,169,110,0.4);background:rgba(201,169,110,0.04);}
+.tk-card h4{font-size:17px;margin-bottom:8px;color:var(--gold-light);font-weight:500;}
+.tk-card p{font-size:13px;color:var(--text-dim);line-height:1.6;}
+.offer-ticket{position:relative;max-width:700px;margin:56px auto 0;background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);border:1px solid rgba(201,169,110,0.35);border-radius:24px;padding:64px 48px;text-align:center;box-shadow:0 40px 100px rgba(0,0,0,0.6),inset 0 1px 0 rgba(201,169,110,0.15);}
+.offer-eyebrow{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);padding:8px 20px;border:1px solid rgba(201,169,110,0.4);border-radius:100px;margin-bottom:24px;}
+.offer-price{font-family:var(--serif);font-size:clamp(72px,10vw,110px);color:var(--gold);font-weight:500;line-height:1;margin:16px 0 8px;text-shadow:0 4px 40px rgba(201,169,110,0.25);}
+.offer-original{font-size:18px;color:var(--text-dim);text-decoration:line-through;margin-right:12px;}
+.offer-badge{display:inline-block;background:rgba(201,169,110,0.15);color:var(--gold);padding:4px 12px;border-radius:6px;font-size:13px;font-weight:600;}
+.offer-subtitle{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2vw,24px);color:var(--text);margin:16px 0 12px;}
+.offer-lead{color:var(--text-dim);font-size:15px;max-width:480px;margin:0 auto 40px;line-height:1.6;}
+.offer-includes{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto 40px;text-align:left;}
+.offer-item{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(201,169,110,0.04);border-left:2px solid var(--gold);border-radius:4px;}
+.offer-item .copy h4{font-family:var(--serif);font-size:18px;color:var(--text);margin:0;font-weight:500;}
+.offer-item .copy p{font-size:13px;color:var(--text-dim);margin:2px 0 0;}
+.offer-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.offer-trust{margin-top:20px;font-size:13px;color:var(--text-dim);}
+.testimonial{max-width:700px;margin:56px auto 0;padding:40px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);}
+.stars{color:var(--gold);margin-bottom:16px;letter-spacing:2px;font-size:18px;}
+.testimonial blockquote{font-family:var(--serif);font-size:19px;font-style:italic;color:var(--text);line-height:1.6;margin-bottom:20px;}
+.testimonial .author{font-size:13px;color:var(--text-dim);}
+.testimonial .author strong{color:var(--gold-light);display:block;font-weight:600;}
+.products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;}
+.product-card{border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);overflow:hidden;transition:all .35s;}
+.product-card:hover{transform:translateY(-4px);border-color:rgba(201,169,110,0.4);}
+.product-card .img{aspect-ratio:1/1;background-size:80%;background-position:center;background-repeat:no-repeat;background-color:#fff;transition:background-size .4s ease,box-shadow .4s ease;display:block;border-bottom:1px solid rgba(201,169,110,0.1);}
+.product-card:hover .img{background-size:88%;box-shadow:inset 0 0 40px rgba(201,169,110,0.05);}
+.product-card .body{padding:24px;}
+.product-card h3{font-size:20px;margin-bottom:8px;}
+.product-card .desc{font-size:14px;color:var(--text-dim);margin-bottom:16px;line-height:1.6;}
+.product-card .price{color:var(--gold);font-weight:600;font-size:15px;margin-bottom:16px;}
+.product-card .btn{width:100%;justify-content:center;font-size:14px;padding:12px 20px;}
+.affiliate-notice{background:rgba(201,169,110,0.06);border:1px solid var(--border);border-radius:12px;padding:16px 24px;font-size:12px;color:var(--text-dim);margin-bottom:48px;line-height:1.6;}
+.affiliate-notice a{color:var(--gold);border-bottom:1px solid var(--gold);}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.article-card{border-radius:18px;border:1px solid var(--border);overflow:hidden;background:rgba(255,255,255,0.02);transition:all .35s;}
+.article-card:hover{transform:translateY(-4px);border-color:rgba(201,169,110,0.4);}
+.article-card .img{aspect-ratio:16/10;background-size:cover;background-position:center;}
+.article-card .body{padding:28px;}
+.article-card h3{font-size:20px;margin-bottom:12px;line-height:1.4;}
+.article-card p{font-size:14px;color:var(--text-dim);margin-bottom:20px;line-height:1.6;}
+.article-card a{color:var(--gold);font-size:14px;font-weight:600;}
+.article-card a:hover{color:var(--gold-light);}
+.checklist-cta{max-width:800px;margin:0 auto;padding:56px;border-radius:24px;border:1px solid rgba(201,169,110,0.35);background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);text-align:center;box-shadow:0 30px 80px rgba(0,0,0,0.5);}
+.directory-cta{background:var(--gold);padding:80px 0;text-align:center;}
+.directory-cta h2{color:#0a0a0f;font-size:clamp(28px,4vw,44px);margin-bottom:16px;}
+.directory-cta p{color:rgba(10,10,15,0.7);font-size:16px;margin-bottom:32px;}
+.directory-cta .btn{background:#0a0a0f;color:var(--gold);}
+.directory-cta .btn:hover{background:#1a1a25;transform:translateY(-2px);}
+footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+.footer-grid h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:20px;font-weight:600;}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:12px;}
+.footer-grid a{color:var(--text-dim);font-size:14px;transition:color .2s;}
+.footer-grid a:hover{color:var(--gold-light);}
+.footer-bottom{padding-top:32px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--text-dim);}
+.footer-disclosure{font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;max-width:700px;margin-left:auto;margin-right:auto;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+@media(max-width:900px){
+nav.top .nav-pills{display:none;}
+nav.top .inner{height:64px;}
+section{padding:80px 0;}
+.website-grid{grid-template-columns:1fr;gap:40px;}
+.products-grid{grid-template-columns:1fr;}
+.articles-grid{grid-template-columns:1fr;}
+.stats-row{grid-template-columns:1fr;}
+.footer-grid{grid-template-columns:1fr 1fr;}
+.offer-ticket{padding:48px 28px;}
+.checklist-cta{padding:40px 24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+<div class="container inner">
+  <a href="index.html" class="logo">Niche<span>ToolkitHub</span></a>
+  <ul class="nav-pills">
+    <li><a href="#website">Website Template</a></li>
+    <li><a href="#toolkit">Business Toolkit</a></li>
+    <li><a href="#products">Top Products</a></li>
+    <li><a href="#articles">Guides &amp; Articles</a></li>
+  </ul>
+  <a href="#toolkit" class="cta-nav">Start Your Camp</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+  <span class="hero-eyebrow">Summer Camp Business · Complete Toolkit</span>
+  <h1>Everything you need to<br><em>start &amp; grow</em> your summer camp.</h1>
+  <p>Professional website template, registration forms, recommended supplies, and expert guides — all in one place.</p>
+  <div class="hero-actions">
+    <a href="#website" class="btn-nav"><span class="nav-icon">&#127760;</span>Custom Website</a>
+    <a href="#toolkit" class="btn-nav"><span class="nav-icon">&#128188;</span>Business Toolkit</a>
+    <a href="#products" class="btn-nav"><span class="nav-icon">&#11088;</span>Top Products</a>
+    <a href="#articles" class="btn-nav"><span class="nav-icon">&#128218;</span>Guides &amp; Articles</a>
+  </div>
+</div>
+</header>
+
+<!-- STATS BANNER -->
+<div class="stats-banner">
+<div class="container inner" style="text-align:center;">
+  <h2>Whether you're starting a day camp or expanding a specialty program</h2>
+  <p class="lead" style="color:var(--text-dim);font-size:16px;max-width:600px;margin:0 auto 48px;">These tools help you manage registration, stay organized, and give parents confidence in your program.</p>
+  <div class="stats-row">
+    <div class="stat-item reveal"><div class="stat-num">$26B</div><div class="stat-label">US summer camp industry revenue</div></div>
+    <div class="stat-item reveal"><div class="stat-num">14M+</div><div class="stat-label">Kids attend camp each summer</div></div>
+    <div class="stat-item reveal"><div class="stat-num">92%</div><div class="stat-label">Parent satisfaction with camp experiences</div></div>
+  </div>
+</div>
+</div>
+
+<!-- SECTION: WEBSITE TEMPLATE -->
+<section id="website">
+<div class="container">
+  <span class="section-eyebrow">Your Online Presence</span>
+  <h2 class="section-title">A website that works <em>as hard as you do.</em></h2>
+  <p class="section-lead">Clients search online before they book. A professional website builds instant credibility, captures leads while you sleep, and ranks you in local search results.</p>
+
+  <div class="website-grid">
+    <div class="mockup-wrap reveal">
+      <div class="mockup-inner">
+        <div class="coming-badge">Coming Soon</div>
+        <p style="font-size:20px;font-weight:600;margin-bottom:8px;">Summer Camp Website Template</p>
+        <p style="font-size:14px;opacity:0.8;">Custom-designed for camp directors</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <ul class="benefits-list">
+        <li><span class="check">✓</span> Online registration reduces admin time by 85%</li>
+        <li><span class="check">✓</span> Photo gallery showcases your camp activities</li>
+        <li><span class="check">✓</span> Mobile-optimized for parents browsing on phones</li>
+        <li><span class="check">✓</span> SEO-ready to rank in "summer camp near me" searches</li>
+        <li><span class="check">✓</span> Session calendar helps parents plan and register early</li>
+      </ul>
+      <div style="margin-top:32px;">
+        <p style="font-size:14px;color:var(--text-dim);margin-bottom:16px;">Join the waitlist to be notified when this launches.</p>
+        <div style="display:flex;gap:12px;">
+          <input type="email" placeholder="your@email.com" style="flex:1;padding:12px 16px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:inherit;font-size:14px;">
+          <button class="btn btn-gold btn-sm" style="flex:0;">Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revenue Impact Chart -->
+  <div class="chart-wrap reveal">
+    <div class="chart-title">Revenue Impact of a Professional Website</div>
+    <svg viewBox="0 0 700 250" style="width:100%;height:auto;">
+      <line x1="80" y1="30" x2="80" y2="200" stroke="rgba(201,169,110,0.2)" stroke-width="1"/>
+      <line x1="80" y1="200" x2="620" y2="200" stroke="rgba(201,169,110,0.2)" stroke-width="1"/>
+      <text x="70" y="200" font-family="Inter,sans-serif" font-size="11" fill="#a8a8b3" text-anchor="end">$0</text>
+      <text x="70" y="140" font-family="Inter,sans-serif" font-size="11" fill="#a8a8b3" text-anchor="end">$3K</text>
+      <text x="70" y="80" font-family="Inter,sans-serif" font-size="11" fill="#a8a8b3" text-anchor="end">$6K</text>
+      <rect x="120" y="150" width="100" height="50" rx="6" fill="#3a3a4a"/>
+      <text x="170" y="180" font-family="Inter,sans-serif" font-size="12" fill="#f5f5f7" text-anchor="middle" font-weight="600">$15K/summer</text>
+      <text x="170" y="218" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3" text-anchor="middle">No Website</text>
+      <rect x="280" y="102" width="100" height="98" rx="6" fill="var(--gold)"/>
+      <text x="330" y="156" font-family="Inter,sans-serif" font-size="12" fill="#0a0a0f" text-anchor="middle" font-weight="600">$28K/summer</text>
+      <text x="330" y="218" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3" text-anchor="middle">Basic Website</text>
+      <rect x="440" y="50" width="100" height="150" rx="6" fill="var(--gold-light)"/>
+      <text x="490" y="130" font-family="Inter,sans-serif" font-size="12" fill="#0a0a0f" text-anchor="middle" font-weight="600">$45K/summer</text>
+      <text x="490" y="218" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3" text-anchor="middle">Pro Website</text>
+    </svg>
+  </div>
+</div>
+</section>
+
+<!-- SECTION: BUSINESS TOOLKIT -->
+<section id="toolkit" class="bg-alt">
+<div class="container">
+  <span class="section-eyebrow">Professional Forms &amp; Tools</span>
+  <h2 class="section-title">Run your summer camp business like a <em>pro from day one.</em></h2>
+  <p class="section-lead">Professional forms reduce admin time by 75%, build client trust from the first interaction, and protect your business legally. Every document is fillable and works on all devices.</p>
+
+  <div class="toolkit-grid">
+    <div class="tk-card reveal"><h4>Camper Registration Form</h4><p>Capture child details, medical info, allergies, emergency contacts, and session selection.</p></div>
+    <div class="tk-card reveal"><h4>Parent Waiver & Consent</h4><p>Legal protection covering activity risk, medical authorization, and photo release.</p></div>
+    <div class="tk-card reveal"><h4>Daily Activity Schedule</h4><p>Organize camp days with activities, rotations, snack/meal breaks, and staff assignments.</p></div>
+    <div class="tk-card reveal"><h4>Pricing Calculator (Excel)</h4><p>Auto-calculates camp fees based on sessions, add-ons, siblings, and early bird discounts.</p></div>
+    <div class="tk-card reveal"><h4>Camper Roster & Attendance</h4><p>Track daily attendance, group assignments, and staff ratios for compliance.</p></div>
+    <div class="tk-card reveal"><h4>Incident Report Form</h4><p>Document injuries, behavioral issues, or medical events with required details.</p></div>
+    <div class="tk-card reveal"><h4>Staff Schedule & Assignment</h4><p>Organize counselor schedules, certifications, and activity assignments.</p></div>
+    <div class="tk-card reveal"><h4>Supply & Equipment Tracker</h4><p>Track sports gear, art supplies, and safety equipment inventory.</p></div>
+    <div class="tk-card reveal"><h4>Welcome Packet Template</h4><p>Parent info packet with packing list, drop-off procedures, and camp rules.</p></div>
+  </div>
+
+  <!-- Time Saved Chart -->
+  <div class="chart-wrap reveal">
+    <div class="chart-title">Time Saved with Digital Forms (Hours per Week)</div>
+    <svg viewBox="0 0 700 180" style="width:100%;height:auto;">
+      <text x="20" y="42" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3">Manual Registration</text>
+      <rect x="180" y="28" width="475" height="24" rx="4" fill="#3a3a4a"/>
+      <text x="665" y="44" font-family="Inter,sans-serif" font-size="13" fill="#f5f5f7" font-weight="600">20 hrs</text>
+      <text x="20" y="92" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3">Digital Forms</text>
+      <rect x="180" y="78" width="119" height="24" rx="4" fill="var(--gold)"/>
+      <text x="309" y="94" font-family="Inter,sans-serif" font-size="13" fill="var(--gold)" font-weight="600">5 hrs</text>
+      <text x="20" y="142" font-family="Inter,sans-serif" font-size="12" fill="#a8a8b3">With NicheToolkits</text>
+      <rect x="180" y="128" width="48" height="24" rx="4" fill="var(--gold-light)"/>
+      <text x="238" y="144" font-family="Inter,sans-serif" font-size="13" fill="var(--gold-light)" font-weight="600">2 hrs</text>
+    </svg>
+  </div>
+
+  <!-- OFFER TICKET -->
+  <div class="offer-ticket reveal">
+    <span class="offer-eyebrow">Complete Summer Camp Toolkit</span>
+    <div class="offer-price">$14.02</div>
+    <div><span class="offer-original">$17.97</span><span class="offer-badge">22% off</span></div>
+    <div class="offer-subtitle">9 professional files — <em style="color:var(--gold);">ready to use today.</em></div>
+    <p class="offer-lead">Fillable PDFs and working Excel spreadsheets. Download once, use forever. No subscriptions.</p>
+    <div class="offer-includes">
+      <div class="offer-item"><span class="check">9</span><div class="copy"><h4>Professional Forms</h4><p>Client intake, contracts, service menus &amp; more</p></div></div>
+      <div class="offer-item"><span class="check">✓</span><div class="copy"><h4>Working Excel Calculator</h4><p>Auto-calculates pricing based on your services</p></div></div>
+      <div class="offer-item"><span class="check">✓</span><div class="copy"><h4>Instant Digital Download</h4><p>Works on Mac, PC &amp; mobile — start using immediately</p></div></div>
+    </div>
+    <div class="offer-cta">
+      <a href="https://www.etsy.com/listing/4478657483/summer-camp-business-toolkit" class="btn btn-gold" data-track="etsy" data-product="summer-camp-toolkit">Get on Etsy Now →</a>
+    </div>
+    <div class="offer-trust">Works on Mac, PC &amp; mobile · Instant download · 22% off sale</div>
+  </div>
+
+</div>
+</section>
+
+<!-- SECTION: TOP 10 AMAZON PRODUCTS -->
+<section id="products">
+<div class="container">
+  <span class="section-eyebrow">Essential Equipment</span>
+  <h2 class="section-title">The gear every summer camp <em>actually needs.</em></h2>
+  <p class="section-lead">From shade structures to safety gear, these are the top-rated products camp directors recommend most for keeping campers safe and having fun.</p>
+
+  <div class="affiliate-notice">
+    <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. As an Amazon Associate I earn from qualifying purchases. This doesn't affect prices or our recommendations. <a href="affiliate-disclosure.html">Full disclosure →</a>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B0CP5ZGX5N?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/61tMtH3Oe7L._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>CROWN SHADES 10x10 Pop-Up Canopy</h3><p class="desc">Heavy-duty instant shade canopy with sidewalls. UPF 50+ protection keeps campers cool during outdoor activities. Sets up in 60 seconds. 4.9★ rating.</p><div class="price">$272.99</div><a href="https://www.amazon.com/dp/B0CP5ZGX5N?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="crown-canopy" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B0D5RB8741?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/51zP-ZK-hFL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>Family First Aid & CPR Kit</h3><p class="desc">Comprehensive 300+ piece first aid kit with CPR supplies. Camp-essential safety gear that meets health department requirements. 4.9★ rating.</p><div class="price">$149.98</div><a href="https://www.amazon.com/dp/B0D5RB8741?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="firstaid-kit" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B08X4YMTPM?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/61qMO3TS2RL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>JBL CHARGE 5 Bluetooth Speaker</h3><p class="desc">Waterproof portable speaker with 20-hour battery life. Perfect for outdoor camp activities, dance parties, and announcements. 4.8★ rating.</p><div class="price">$139.95</div><a href="https://www.amazon.com/dp/B08X4YMTPM?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="jbl-speaker" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B07CQ8JVC7?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/81jLX2mET0L._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>Surviveware 238-Piece First Aid Kit</h3><p class="desc">Organized first aid kit with labeled compartments for fast emergency response. MOLLE-compatible and waterproof — perfect for outdoor camps. 4.8★ rating.</p><div class="price">$89.99</div><a href="https://www.amazon.com/dp/B07CQ8JVC7?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="surviveware-kit" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B0GS4ZGF94?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/51jSIaaIAUL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>SANWAY 10x10 Instant Canopy</h3><p class="desc">Budget-friendly pop-up canopy tent with adjustable height. Provides reliable shade for outdoor camp stations and activities. 5.0★ rating.</p><div class="price">$62.99</div><a href="https://www.amazon.com/dp/B0GS4ZGF94?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="sanway-canopy" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B09KLVB9X7?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/614ygclIz4L._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>CROWN SHADES Canopy with Side Wall</h3><p class="desc">10x10 canopy with detachable sidewall for sun and wind protection. One-push setup and UPF 50+ rated — ideal for camp check-in stations. 4.7★ rating.</p><div class="price">$149.99</div><a href="https://www.amazon.com/dp/B09KLVB9X7?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="crown-sidewall" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B0D6C48S37?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/51eexQE5tvL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>Coleman Backpack Sun Shelter</h3><p class="desc">Portable 7x7ft lightweight canopy that packs into a backpack. Easy setup for mobile camp activities and field trips. 4.6★ rating.</p><div class="price">$139.99</div><a href="https://www.amazon.com/dp/B0D6C48S37?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="coleman-shelter" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B07Y5TBXJ2?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/81Mp7I1UvbL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>Franklin Sports Sideline Shelter</h3><p class="desc">UPF 50+ sideline sunblocker shelter perfect for sports camps, coaching stations, and spectator areas. Instant setup and takedown. 4.8★ rating.</p><div class="price">$54.98</div><a href="https://www.amazon.com/dp/B07Y5TBXJ2?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="franklin-shelter" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B07QQW4MXP?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/61hGbOlkP4L._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>MASTERCANOPY 10x10 Pop-Up Tent</h3><p class="desc">Durable commercial-grade canopy with roller bag. Heavy-duty frame holds up to wind and daily camp use all summer long. 4.3★ rating.</p><div class="price">$119.95</div><a href="https://www.amazon.com/dp/B07QQW4MXP?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="mastercanopy" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+    <div class="product-card reveal">
+      <a href="https://www.amazon.com/dp/B097QZMYTP?tag=nichetoolkith-20" target="_blank" rel="noopener" class="img" style="background-image:url('https://m.media-amazon.com/images/I/71UAgchj+lL._AC_SL1500_.jpg')"></a>
+      <div class="body"><h3>CoolCabana Beach Shade Tent</h3><p class="desc">Premium UPF 50+ shade tent with excellent ventilation. Compact design is perfect for waterfront camps, beach days, and outdoor programs. 4.8★ rating.</p><div class="price">$269.00</div><a href="https://www.amazon.com/dp/B097QZMYTP?tag=nichetoolkith-20" class="btn btn-gold btn-sm" data-track="amazon" data-product="coolcabana" target="_blank" rel="noopener">View on Amazon →</a></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SECTION: GUIDES & ARTICLES -->
+<section id="articles" class="bg-alt">
+<div class="container">
+  <span class="section-eyebrow">Expert Resources</span>
+  <h2 class="section-title">Guides to help you <em>grow faster.</em></h2>
+  <p class="section-lead">Data-driven articles and industry guides written specifically for summer camp business owners.</p>
+
+  <div class="articles-grid">
+    <div class="article-card reveal">
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1472745942893-4b9f730c7668?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="body">
+        <div class="featured-badge">Featured Guide</div>
+        <h3>How to Start a Summer Camp Business | Squarespace</h3>
+        <p>Planning, permits, staffing, and programming — Squarespace's guide to launching a summer camp with startup costs of $15K–$150K and profit margins of 25–40%.</p>
+        <a href="https://www.squarespace.com/blog/how-to-start-a-summer-camp" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="article-card reveal">
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="body">
+        <div class="featured-badge">Featured Guide</div>
+        <h3>How to Start and Run a Summer Camp: Step-by-Step Guide</h3>
+        <p>Activity planning, ACA accreditation, hiring counselors, pricing for parents, and facility selection — a comprehensive playbook from concept to first-day operations.</p>
+        <a href="https://activitymessenger.com/blog/how-to-start-and-run-a-summer-camp/" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+      </div>
+    </div>
+    <div class="article-card reveal">
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="body">
+        <div class="featured-badge">Featured Guide</div>
+        <h3>How to Start a Summer Camp Business | Camp Network</h3>
+        <p>Market research, legal structure, location scouting, camp management software, and enrollment marketing — Camp Network's insider guide to the youth camp industry.</p>
+        <a href="https://blog.campnetwork.com/how-to-start-a-summer-camp-business" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- DIRECTORY CTA -->
+<div class="directory-cta">
+<div class="container">
+  <h2>Explore All 22+ Business Niches</h2>
+  <p>We have toolkits, product guides, and resources for every type of service business.</p>
+  <a href="index.html#niches" class="btn">Browse All Niches →</a>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <h4>NicheToolkitHub</h4>
+      <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;">Professional business toolkits for 22+ niches. Everything you need to start and grow your business.</p>
+      <p style="font-size:13px;color:var(--text-dim);">Built by <a href="https://www.etsy.com/shop/nichetoolkits" style="color:var(--gold);">NicheToolkits</a></p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="index.html#niches">Browse Niches</a></li><li><a href="#articles">Blog</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul><li><a href="https://www.etsy.com/shop/nichetoolkits">Shop on Etsy</a></li><li><a href="#products">Recommended Products</a></li><li><a href="#articles">Business Guides</a></li></ul>
+    </div>
+    <div>
+      <h4>Summer Camp</h4>
+      <ul><li><a href="https://www.etsy.com/listing/4478657483/summer-camp-business-toolkit">Summer Camp Toolkit</a></li><li><a href="#products">Supply Guide</a></li><li><a href="#articles">Startup Guide</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-disclosure">Some links on this page are affiliate links. As an Amazon Associate I earn from qualifying purchases. This doesn't affect prices or our recommendations.</div>
+    <p>&copy; 2026 NicheToolkitHub. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      const section = entry.target.closest('section');
+      if (section && section.id) {
+        gtag('event', 'section_view', { section: section.id, niche: 'summer-camp' });
+      }
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const nav = document.querySelector('nav.top');
+window.addEventListener('scroll', () => {
+  nav.style.background = window.scrollY > 80
+    ? 'rgba(10,10,15,0.92)'
+    : 'rgba(10,10,15,0.6)';
+});
+
+const sections = document.querySelectorAll('section[id]');
+const pills = document.querySelectorAll('.nav-pills a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 200) current = s.id;
+  });
+  pills.forEach(p => {
+    p.classList.remove('active');
+    if (p.getAttribute('href') === '#' + current) p.classList.add('active');
+  });
+});
+
+document.querySelectorAll('[data-track]').forEach(link => {
+  link.addEventListener('click', function() {
+    const type = this.dataset.track;
+    const product = this.dataset.product || 'unknown';
+    gtag('event', 'click_' + type, {
+      niche: 'summer-camp',
+      product: product,
+      url: this.href
+    });
+  });
+});
+</script>
+</body>
+</html>
