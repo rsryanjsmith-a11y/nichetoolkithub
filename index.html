@@ -1,178 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicheToolkitHub - Everything Your Niche Business Needs</title>
-    <meta name="description" content="NicheToolkitHub is the one-stop resource hub for niche business owners. Tools, templates, guides, and products to grow your business.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NicheToolkitHub — Business Toolkits, Website Templates & Guides for 22+ Niches</title>
+<meta name="description" content="Professional business toolkits, website templates, curated products, and expert guides for 22+ service business niches. Start and grow your business today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<style>
+:root{--bg:#0a0a0f;--bg-alt:#12121a;--gold:#c9a96e;--gold-light:#e6cfa1;--text:#f5f5f7;--text-dim:#a8a8b3;--border:rgba(201,169,110,0.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+nav.top{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,15,0.6);border-bottom:1px solid var(--border);transition:all .3s ease;}
+nav.top .inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+nav.top .logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);white-space:nowrap;}
+nav.top .logo span{color:var(--text);}
+nav.top .nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
+nav.top .nav-links a{font-size:14px;color:var(--text-dim);transition:color .2s;font-weight:500;}
+nav.top .nav-links a:hover{color:var(--gold-light);}
+nav.top .cta-nav{background:var(--gold);color:#0a0a0f;padding:10px 22px;border-radius:999px;font-weight:600;font-size:13px;transition:all .25s;white-space:nowrap;}
+nav.top .cta-nav:hover{background:var(--gold-light);transform:translateY(-1px);}
+header.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:140px 24px 80px;background:#0a0a0f;}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;}
+.hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,15,0.85) 0%,rgba(10,10,15,0.5) 40%,rgba(10,10,15,0.95) 100%);}
+.hero-content{text-align:center;max-width:900px;position:relative;z-index:2;animation:fadeUp 1.2s ease;}
+.hero-eyebrow{display:inline-block;padding:8px 20px;border:1px solid var(--border);border-radius:999px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:32px;backdrop-filter:blur(8px);background:rgba(10,10,15,0.4);}
+.hero h1{font-size:clamp(38px,6.5vw,80px);margin-bottom:24px;text-shadow:0 4px 30px rgba(0,0,0,0.6);}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.hero p{font-size:clamp(16px,1.5vw,19px);color:#e6e6ec;max-width:620px;margin:0 auto 40px;text-shadow:0 2px 20px rgba(0,0,0,0.6);}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:15px;transition:all .25s;cursor:pointer;border:none;font-family:inherit;}
+.btn-gold{background:var(--gold);color:#0a0a0f;}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,169,110,0.25);}
+.btn-ghost{background:rgba(10,10,15,0.5);color:var(--text);border:1px solid var(--border);backdrop-filter:blur(8px);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}
+.stats-banner{background:var(--bg-alt);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.stat-item{padding:28px;}
+.stat-num{font-family:var(--serif);font-size:42px;color:var(--gold);font-weight:600;margin-bottom:4px;}
+.stat-label{font-size:13px;color:var(--text-dim);line-height:1.5;}
+section{padding:120px 0;position:relative;}
+.section-eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;font-family:var(--sans);font-weight:600;}
+.section-title{font-size:clamp(32px,5vw,52px);margin-bottom:24px;}
+.section-title em{font-style:italic;color:var(--gold-light);}
+.section-lead{color:var(--text-dim);font-size:17px;max-width:620px;margin-bottom:56px;line-height:1.7;}
+.bg-alt{background:var(--bg-alt);}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.step-card{padding:40px 32px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);text-align:center;transition:all .35s;}
+.step-card:hover{border-color:rgba(201,169,110,0.4);transform:translateY(-4px);}
+.step-num{font-family:var(--serif);font-size:48px;color:var(--gold);font-weight:600;margin-bottom:16px;opacity:0.6;}
+.step-card h3{font-size:22px;margin-bottom:12px;}
+.step-card p{font-size:14px;color:var(--text-dim);line-height:1.7;}
+.niche-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+.niche-card{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s;text-decoration:none;display:block;}
+.niche-card:hover{transform:translateY(-6px);border-color:rgba(201,169,110,0.5);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+.niche-card .img{aspect-ratio:16/10;background-size:cover;background-position:center;position:relative;}
+.niche-card .img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,10,15,0.8) 100%);}
+.niche-card .body{padding:24px;}
+.niche-card h3{font-size:20px;margin-bottom:8px;color:var(--text);}
+.niche-card p{font-size:13px;color:var(--text-dim);line-height:1.5;margin-bottom:16px;}
+.niche-card .tag{display:inline-block;font-size:11px;padding:4px 12px;border:1px solid var(--border);border-radius:20px;color:var(--gold);font-weight:500;}
+.niche-card .arrow{position:absolute;top:24px;right:24px;width:36px;height:36px;border-radius:50%;background:var(--gold);color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;transition:opacity .3s;}
+.niche-card .arrow svg{stroke:#0a0a0f;}
+.niche-card:hover .arrow{opacity:1;}
+.offer-banner{background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);border:1px solid rgba(201,169,110,0.35);border-radius:24px;padding:64px 48px;text-align:center;max-width:800px;margin:0 auto;box-shadow:0 40px 100px rgba(0,0,0,0.6);}
+.offer-banner .price{font-family:var(--serif);font-size:64px;color:var(--gold);font-weight:500;}
+.offer-banner .original{text-decoration:line-through;color:var(--text-dim);font-size:18px;}
+.offer-banner .badge{display:inline-block;background:rgba(201,169,110,0.15);color:var(--gold);padding:4px 12px;border-radius:6px;font-size:13px;font-weight:600;margin-left:8px;}
+footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+.footer-grid h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:20px;font-weight:600;}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:12px;}
+.footer-grid a{color:var(--text-dim);font-size:14px;transition:color .2s;}
+.footer-grid a:hover{color:var(--gold-light);}
+.footer-bottom{padding-top:32px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--text-dim);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+@media(max-width:900px){
+nav.top .nav-links{display:none;}
+.stats-row{grid-template-columns:repeat(2,1fr);}
+.steps-grid{grid-template-columns:1fr;}
+.niche-grid{grid-template-columns:1fr 1fr;}
+.footer-grid{grid-template-columns:1fr 1fr;}
+.offer-banner{padding:48px 28px;}
+}
+@media(max-width:600px){
+.niche-grid{grid-template-columns:1fr;}
+.stats-row{grid-template-columns:1fr;}
+}
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="/" class="logo">
-                <span class="logo-icon">&#9881;</span>
-                NicheToolkitHub
-            </a>
-            <nav class="nav">
-                <a href="#toolkits">Toolkits</a>
-                <a href="#resources">Resources</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="btn btn-sm">Get Started</a>
-            </nav>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Everything Your <span class="highlight">Niche Business</span> Needs in One Place</h1>
-            <p class="hero-sub">Tools, templates, guides, and curated products to help you launch, manage, and grow your niche business — without the overwhelm.</p>
-            <div class="hero-actions">
-                <a href="#toolkits" class="btn btn-primary">Browse Toolkits</a>
-                <a href="#about" class="btn btn-outline">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Toolkits Section -->
-    <section id="toolkits" class="section toolkits">
-        <div class="container">
-            <h2 class="section-title">Business Toolkits</h2>
-            <p class="section-sub">Curated bundles designed for specific niche businesses. Each toolkit includes everything you need to get started.</p>
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-icon">&#128139;</div>
-                    <h3>Nail &amp; Hair Salon</h3>
-                    <p>Client management templates, pricing calculators, social media kits, and booking system guides for beauty professionals.</p>
-                    <a href="#" class="card-link">Coming Soon &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#127912;</div>
-                    <h3>Etsy Sellers</h3>
-                    <p>Listing optimization checklists, SEO keyword tools, inventory trackers, and shipping label templates for Etsy shop owners.</p>
-                    <a href="#" class="card-link">Explore &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#128218;</div>
-                    <h3>Content Creators</h3>
-                    <p>Editorial calendars, monetization guides, brand pitch templates, and analytics dashboards for bloggers and influencers.</p>
-                    <a href="#" class="card-link">Coming Soon &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#127968;</div>
-                    <h3>Home Services</h3>
-                    <p>Estimate templates, job scheduling tools, customer follow-up scripts, and review collection guides for local service businesses.</p>
-                    <a href="#" class="card-link">Coming Soon &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#128722;</div>
-                    <h3>E-Commerce</h3>
-                    <p>Product listing frameworks, ad creative guides, conversion optimization checklists, and supplier negotiation templates.</p>
-                    <a href="#" class="card-link">Coming Soon &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#128187;</div>
-                    <h3>Freelancers &amp; Consultants</h3>
-                    <p>Contract templates, proposal builders, invoicing systems, and client onboarding workflows for independent professionals.</p>
-                    <a href="#" class="card-link">Coming Soon &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resources Section -->
-    <section id="resources" class="section resources">
-        <div class="container">
-            <h2 class="section-title">Free Resources</h2>
-            <p class="section-sub">Helpful guides and tools available to every niche business owner — no sign-up required.</p>
-            <div class="grid grid-2">
-                <div class="resource-card">
-                    <span class="resource-tag">Guide</span>
-                    <h3>How to Find Your Niche</h3>
-                    <p>A step-by-step framework for identifying profitable niche markets and validating your business idea.</p>
-                </div>
-                <div class="resource-card">
-                    <span class="resource-tag">Template</span>
-                    <h3>Business Plan One-Pager</h3>
-                    <p>A simple, one-page business plan template that keeps you focused on what matters most.</p>
-                </div>
-                <div class="resource-card">
-                    <span class="resource-tag">Checklist</span>
-                    <h3>Launch Day Checklist</h3>
-                    <p>Everything you need to do before, during, and after launching your niche business or product.</p>
-                </div>
-                <div class="resource-card">
-                    <span class="resource-tag">Tool</span>
-                    <h3>Pricing Calculator</h3>
-                    <p>Figure out the right price for your products or services based on costs, market, and profit goals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="about-content">
-                <h2>Built for Niche Business Owners, by Niche Business Owners</h2>
-                <p>NicheToolkitHub was created because we know how hard it is to find the right tools when you're running a specialized business. Big-box solutions don't fit. Generic advice doesn't apply. You need resources built specifically for <em>your</em> kind of business.</p>
-                <p>That's exactly what we provide — curated toolkits, battle-tested templates, and practical guides designed for real niche businesses. Whether you're a salon owner, an Etsy seller, a freelancer, or a local service provider, we've got you covered.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA / Contact Section -->
-    <section id="contact" class="section cta">
-        <div class="container">
-            <h2>Ready to Level Up Your Business?</h2>
-            <p>Join our community of niche business owners and get early access to new toolkits, exclusive templates, and insider tips.</p>
-            <form class="cta-form" action="#" method="post">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn btn-primary">Get Early Access</button>
-            </form>
-            <small>No spam. Unsubscribe anytime.</small>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <a href="/" class="logo">
-                        <span class="logo-icon">&#9881;</span>
-                        NicheToolkitHub
-                    </a>
-                    <p class="footer-desc">The one-stop resource hub for niche business owners.</p>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <a href="#toolkits">Toolkits</a>
-                    <a href="#resources">Resources</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div>
-                    <h4>Connect</h4>
-                    <a href="#">Etsy Shop</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">Instagram</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 NicheToolkitHub.com. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<nav class="top">
+<div class="container inner">
+  <a href="index.html" class="logo">Niche<span>ToolkitHub</span></a>
+  <ul class="nav-links">
+    <li><a href="social-media-package.html" style="color:var(--gold-light);">Social Media <span style="display:inline-block;background:var(--gold);color:#0a0a0f;font-size:9px;font-weight:700;padding:2px 7px;border-radius:100px;letter-spacing:1px;margin-left:4px;vertical-align:middle;">NEW</span></a></li>
+    <li><a href="#niches">Browse Niches</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="https://www.etsy.com/shop/nichetoolkits">Shop on Etsy</a></li>
+  </ul>
+  <a href="#niches" class="cta-nav">Find Your Niche</a>
+</div>
+</nav>
+<header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+  <span class="hero-eyebrow">22+ Business Niches &middot; One Hub</span>
+  <h1>Start &amp; grow your<br><em>service business</em> today.</h1>
+  <p>Professional website templates, done-for-you business toolkits, curated product guides, and expert articles — everything you need in one place.</p>
+  <div class="hero-actions">
+    <a href="#niches" class="btn btn-gold">Browse All Niches</a>
+    <a href="https://www.etsy.com/shop/nichetoolkits" class="btn btn-ghost">Shop on Etsy</a>
+  </div>
+</div>
+</header>
+<div class="stats-banner">
+<div class="container">
+  <div class="stats-row">
+    <div class="stat-item reveal"><div class="stat-num">22+</div><div class="stat-label">Business niches covered</div></div>
+    <div class="stat-item reveal"><div class="stat-num">$14</div><div class="stat-label">Complete toolkit price</div></div>
+    <div class="stat-item reveal"><div class="stat-num">100+</div><div class="stat-label">Professional forms included</div></div>
+    <div class="stat-item reveal"><div class="stat-num">5.0★</div><div class="stat-label">Customer rating</div></div>
+  </div>
+</div>
+</div>
+<!-- FEATURED: Social Media Package -->
+<section style="padding:72px 0;background:linear-gradient(180deg,var(--bg) 0%,var(--bg-alt) 100%);">
+<div class="container">
+  <a href="social-media-package.html" style="display:block;padding:48px;border-radius:24px;border:1px solid var(--border);background:linear-gradient(135deg,rgba(201,169,110,0.1) 0%,rgba(201,169,110,0.02) 100%);text-decoration:none;color:inherit;transition:all .35s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--gold)';this.style.boxShadow='0 30px 60px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--border)';this.style.boxShadow='none';">
+    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <div style="display:inline-block;background:var(--gold);color:#0a0a0f;font-size:11px;font-weight:700;padding:5px 14px;border-radius:100px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">New Service</div>
+        <h2 style="font-family:var(--serif);font-size:clamp(28px,3.5vw,40px);margin-bottom:12px;line-height:1.2;">Done-for-you <em style="font-style:italic;color:var(--gold-light);">social media</em>, monthly.</h2>
+        <p style="color:var(--text-dim);font-size:16px;max-width:560px;line-height:1.7;margin-bottom:20px;">20 custom posts per month with AI-designed imagery, captions, and hashtags — delivered ready to post, or I schedule it all for you. Starting at $297/mo.</p>
+        <span style="display:inline-flex;align-items:center;gap:8px;color:var(--gold-light);font-weight:600;font-size:15px;">See pricing &amp; samples <span style="font-size:18px;">&rarr;</span></span>
+      </div>
+      <div style="font-family:var(--serif);font-size:clamp(60px,9vw,120px);color:var(--gold);opacity:0.9;line-height:1;">&#128226;</div>
+    </div>
+  </a>
+</div>
+</section>
+<section id="how-it-works">
+<div class="container">
+  <span class="section-eyebrow">How It Works</span>
+  <h2 class="section-title">Three steps to a <em>professional business.</em></h2>
+  <p class="section-lead">We've done the research so you don't have to. Pick your niche and get everything you need to look professional from day one.</p>
+  <div class="steps-grid">
+    <div class="step-card reveal">
+      <div class="step-num">01</div>
+      <h3>Choose Your Niche</h3>
+      <p>Browse 22+ service business categories. From nail salons to landscaping, we've got your industry covered.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">02</div>
+      <h3>Get Your Toolkit</h3>
+      <p>Download professional forms, pricing calculators, and contracts. All fillable PDFs and working Excel files — ready to use immediately.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">03</div>
+      <h3>Grow Your Business</h3>
+      <p>Use our product guides, website templates, and expert articles to attract more clients and increase your revenue.</p>
+    </div>
+  </div>
+</div>
+</section>
+<section id="niches" class="bg-alt">
+<div class="container">
+  <span class="section-eyebrow">Browse by Industry</span>
+  <h2 class="section-title">Find your <em>business niche.</em></h2>
+  <p class="section-lead">Each niche page includes a professional toolkit, website template, curated product recommendations, and expert guides tailored to your industry.</p>
+  <div class="niche-grid">
+    <a href="nail-salon.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Nail Salon</h3><p>Client intake, consent forms, pricing calculator, and 11 professional documents.</p><span class="tag">11 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="dog-grooming.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Dog Grooming</h3><p>Pet intake, grooming checklist, pricing calculator, and 11 professional forms.</p><span class="tag">11 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="cleaning-service.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Cleaning Service</h3><p>Service agreements, cleaning checklists, pricing calculator, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="landscaping.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Landscaping</h3><p>Estimate templates, contracts, crew tracker, and 7 professional forms.</p><span class="tag">7 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="pressure-washing.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1635274605638-d44babc08a4f?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Pressure Washing</h3><p>Estimate templates, service agreements, job tracker, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="car-detailing.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Mobile Car Detailing</h3><p>Vehicle intake, inspection checklist, pricing calculator, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="pool-maintenance.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Pool Maintenance</h3><p>Chemistry log, route planner, service agreements, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="daycare.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Daycare</h3><p>Enrollment forms, parent contracts, attendance tracker, and 10 professional forms.</p><span class="tag">10 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="dog-walker.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Dog Walker / Pet Sitter</h3><p>Pet intake, walk reports, key log, pricing calculator, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="personal-chef.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Personal Chef</h3><p>Dietary intake, menu planning, grocery lists, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="airbnb.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Airbnb Host</h3><p>Rental agreements, guest guides, cleaning checklists, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="lash-brow.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Lash &amp; Brow</h3><p>Allergy intake, consent waivers, lash maps, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="tutoring.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Tutoring</h3><p>Student intake, progress tracker, session planner, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="photography.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Photography</h3><p>Client contracts, model releases, shot lists, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="bookkeeping.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Bookkeeping</h3><p>Engagement letters, monthly close checklists, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="yoga-pilates.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Yoga &amp; Pilates Studio</h3><p>Health intake, liability waivers, class schedules, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="summer-camp.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1472745942893-4b9f730c7668?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Summer Camp</h3><p>Registration forms, parent waivers, activity schedules, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="massage.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Massage Therapist</h3><p>SOAP notes, health intake, treatment plans, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="wedding-event.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Wedding &amp; Event Planner</h3><p>Planning contracts, budget trackers, vendor logs, and 10 professional forms.</p><span class="tag">10 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="handyman.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Handyman</h3><p>Estimate templates, job trackers, invoices, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="pest-control.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Pest Control</h3><p>Inspection reports, treatment logs, safety docs, and 8 professional forms.</p><span class="tag">8 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+    <a href="home-healthcare.html" class="niche-card reveal"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80')"></div><div class="body"><h3>Home Healthcare</h3><p>Care plans, HIPAA-ready intake, medication logs, and 9 professional forms.</p><span class="tag">9 Files · $14.02</span></div><div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div></a>
+  </div>
+</div>
+</section>
+<section>
+<div class="container">
+  <div class="offer-banner reveal">
+    <span class="section-eyebrow" style="text-align:center;display:block;">Limited Time Offer</span>
+    <h2 class="section-title" style="text-align:center;">Every toolkit is <em>22% off</em> right now.</h2>
+    <div style="margin:24px 0;"><span class="price">$14.02</span></div>
+    <div style="margin-bottom:32px;"><span class="original">$17.97</span><span class="badge">22% off</span></div>
+    <p style="color:var(--text-dim);font-size:16px;max-width:500px;margin:0 auto 32px;line-height:1.7;">Fillable PDFs, working Excel calculators, and professional templates. Download once, use forever. No subscriptions.</p>
+    <a href="https://www.etsy.com/shop/nichetoolkits" class="btn btn-gold">Browse All Toolkits on Etsy →</a>
+  </div>
+</div>
+</section>
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <h4>NicheToolkitHub</h4>
+      <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;">Professional business toolkits for 22+ niches. Everything you need to start and grow your service business.</p>
+      <p style="font-size:13px;color:var(--text-dim);">Built by <a href="https://www.etsy.com/shop/nichetoolkits" style="color:var(--gold);">NicheToolkits</a></p>
+    </div>
+    <div>
+      <h4>Popular Niches</h4>
+      <ul><li><a href="nail-salon.html">Nail Salon</a></li><li><a href="dog-grooming.html">Dog Grooming</a></li><li><a href="cleaning-service.html">Cleaning Service</a></li><li><a href="landscaping.html">Landscaping</a></li><li><a href="photography.html">Photography</a></li></ul>
+    </div>
+    <div>
+      <h4>More Niches</h4>
+      <ul><li><a href="massage.html">Massage Therapist</a></li><li><a href="airbnb.html">Airbnb Host</a></li><li><a href="wedding-event.html">Event Planner</a></li><li><a href="car-detailing.html">Car Detailing</a></li><li><a href="bookkeeping.html">Bookkeeping</a></li></ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul><li><a href="https://www.etsy.com/shop/nichetoolkits">Shop on Etsy</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;max-width:700px;margin-left:auto;margin-right:auto;">Some links on this site are affiliate links. As an Amazon Associate I earn from qualifying purchases. This doesn't affect prices or our recommendations.</p>
+    <p>&copy; 2026 NicheToolkitHub. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('in'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const nav = document.querySelector('nav.top');
+window.addEventListener('scroll', () => {
+  nav.style.background = window.scrollY > 80 ? 'rgba(10,10,15,0.92)' : 'rgba(10,10,15,0.6)';
+});
+</script>
 </body>
 </html>

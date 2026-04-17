@@ -38,10 +38,13 @@ header.hero{min-height:100vh;position:relative;display:flex;align-items:center;j
 .hero h1{font-size:clamp(38px,6.5vw,80px);margin-bottom:24px;text-shadow:0 4px 30px rgba(0,0,0,0.6);}
 .hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
 .hero p{font-size:clamp(16px,1.5vw,19px);color:#e6e6ec;max-width:620px;margin:0 auto 40px;text-shadow:0 2px 20px rgba(0,0,0,0.6);}
-.hero-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:720px;margin:0 auto;}
-.hero-actions .btn-nav{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 12px;border-radius:16px;background:rgba(10,10,15,0.55);border:1px solid var(--border);backdrop-filter:blur(12px);color:var(--text);font-size:13px;font-weight:600;transition:all .3s ease;text-align:center;cursor:pointer;font-family:var(--sans);}
-.hero-actions .btn-nav:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.4);}
+.hero-actions{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:900px;margin:0 auto;}
+nav.top .nav-pills a.pill-featured{color:var(--gold);border-color:var(--gold);}
+nav.top .nav-pills a.pill-featured:hover{background:rgba(201,169,110,0.1);}
+.hero-actions .btn-nav{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 12px;border-radius:16px;background:linear-gradient(135deg,rgba(201,169,110,0.15),rgba(201,169,110,0.05));border:1px solid var(--gold);backdrop-filter:blur(12px);color:var(--text);font-size:13px;font-weight:600;transition:all .3s ease;text-align:center;cursor:pointer;font-family:var(--sans);}
+.hero-actions .btn-nav:hover{background:linear-gradient(135deg,rgba(201,169,110,0.25),rgba(201,169,110,0.1));color:var(--gold-light);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.4);}
 .hero-actions .btn-nav .nav-icon{font-size:24px;line-height:1;}
+@media(max-width:900px){.hero-actions{grid-template-columns:repeat(3,1fr);max-width:560px;}}
 @media(max-width:600px){.hero-actions{grid-template-columns:repeat(2,1fr);max-width:340px;}}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:15px;transition:all .25s;cursor:pointer;border:none;font-family:inherit;}
 .btn-gold{background:var(--gold);color:#0a0a0f;}
@@ -157,12 +160,13 @@ section{padding:80px 0;}
 <!-- NAV -->
 <nav class="top">
 <div class="container inner">
-  <a href="index.html" class="logo">Niche<span>ToolkitHub</span></a>
+  <a href="https://nichetoolkithub.com/" class="logo">Niche<span>ToolkitHub</span></a>
   <ul class="nav-pills">
     <li><a href="#website">Website Template</a></li>
     <li><a href="#toolkit">Business Toolkit</a></li>
     <li><a href="#products">Top Products</a></li>
     <li><a href="#articles">Guides &amp; Articles</a></li>
+    <li><a href="social-media-package.html" class="pill-featured">Social Media Package</a></li>
   </ul>
   <a href="#toolkit" class="cta-nav">Start Your Photo Biz</a>
 </div>
@@ -181,6 +185,7 @@ section{padding:80px 0;}
     <a href="#toolkit" class="btn-nav"><span class="nav-icon">&#128188;</span>Business Toolkit</a>
     <a href="#products" class="btn-nav"><span class="nav-icon">&#11088;</span>Top Products</a>
     <a href="#articles" class="btn-nav"><span class="nav-icon">&#128218;</span>Guides &amp; Articles</a>
+    <a href="social-media-package.html" class="btn-nav"><span class="nav-icon">&#128226;</span>Social Media Package</a>
   </div>
 </div>
 </header>
@@ -425,7 +430,7 @@ section{padding:80px 0;}
     </div>
     <div>
       <h4>Quick Links</h4>
-      <ul><li><a href="index.html">Home</a></li><li><a href="index.html#niches">Browse Niches</a></li><li><a href="#articles">Blog</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul>
+      <ul><li><a href="https://nichetoolkithub.com/">Home</a></li><li><a href="https://nichetoolkithub.com/#niches">Browse Niches</a></li><li><a href="#articles">Blog</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul>
     </div>
     <div>
       <h4>Resources</h4>

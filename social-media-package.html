@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Content Package — Done-For-You Posts, Captions & Scheduling | NicheToolkitHub</title>
+<meta name="description" content="Monthly done-for-you social media content for small businesses. 20 posts per month with AI-designed images, captions, hashtags, and optional full scheduling. From $297/mo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--bg-alt:#12121a;--gold:#c9a96e;--gold-light:#e6cfa1;--text:#f5f5f7;--text-dim:#a8a8b3;--border:rgba(201,169,110,0.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+/* Nav */
+nav.top{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,15,0.6);border-bottom:1px solid var(--border);transition:all .3s ease;}
+nav.top .inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+nav.top .logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);white-space:nowrap;}
+nav.top .logo span{color:var(--text);}
+nav.top .nav-pills{display:flex;gap:8px;list-style:none;align-items:center;}
+nav.top .nav-pills a{font-size:13px;color:var(--text-dim);padding:8px 18px;border:1px solid transparent;border-radius:999px;transition:all .25s;font-weight:500;white-space:nowrap;}
+nav.top .nav-pills a:hover{border-color:var(--border);color:var(--gold-light);}
+nav.top .nav-pills a.active{border-color:var(--gold);color:var(--gold);}
+nav.top .cta-nav{background:var(--gold);color:#0a0a0f;padding:10px 22px;border-radius:999px;font-weight:600;font-size:13px;transition:all .25s;white-space:nowrap;}
+nav.top .cta-nav:hover{background:var(--gold-light);transform:translateY(-1px);}
+
+/* Hero */
+header.hero{min-height:92vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:140px 24px 80px;background:#0a0a0f;}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;}
+.hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,15,0.85) 0%,rgba(10,10,15,0.55) 40%,rgba(10,10,15,0.97) 100%);}
+.hero-content{text-align:center;max-width:880px;position:relative;z-index:2;animation:fadeUp 1.2s ease;}
+.hero-eyebrow{display:inline-block;padding:8px 20px;border:1px solid var(--border);border-radius:999px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:32px;backdrop-filter:blur(8px);background:rgba(10,10,15,0.4);}
+.hero h1{font-size:clamp(38px,6.5vw,76px);margin-bottom:24px;text-shadow:0 4px 30px rgba(0,0,0,0.6);}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.hero p{font-size:clamp(16px,1.5vw,19px);color:#e6e6ec;max-width:620px;margin:0 auto 40px;text-shadow:0 2px 20px rgba(0,0,0,0.6);}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:15px;transition:all .25s;cursor:pointer;border:none;font-family:inherit;}
+.btn-gold{background:var(--gold);color:#0a0a0f;}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,169,110,0.25);}
+.btn-ghost{background:rgba(10,10,15,0.5);color:var(--text);border:1px solid var(--border);backdrop-filter:blur(8px);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}
+.btn-sm{padding:12px 24px;font-size:14px;}
+.btn-lg{padding:20px 40px;font-size:17px;}
+
+/* Sections */
+section{padding:120px 0;position:relative;}
+.section-eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;font-family:var(--sans);font-weight:600;}
+.section-title{font-size:clamp(32px,5vw,52px);margin-bottom:24px;}
+.section-title em{font-style:italic;color:var(--gold-light);}
+.section-lead{color:var(--text-dim);font-size:17px;max-width:640px;margin-bottom:56px;line-height:1.7;}
+.text-center{text-align:center;}
+.text-center .section-lead{margin-left:auto;margin-right:auto;}
+.bg-alt{background:var(--bg-alt);}
+
+/* Sample preview card */
+.sample-wrap{max-width:920px;margin:0 auto;border-radius:24px;border:1px solid var(--border);background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);padding:48px;position:relative;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.5);}
+.sample-wrap::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,rgba(201,169,110,0.08) 0%,transparent 70%);pointer-events:none;}
+.sample-badge{display:inline-block;background:rgba(201,169,110,0.15);color:var(--gold);padding:6px 14px;border-radius:100px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.sample-wrap h3{font-size:clamp(28px,3.5vw,40px);margin-bottom:16px;}
+.sample-wrap h3 em{color:var(--gold);font-style:italic;}
+.sample-wrap p{color:var(--text-dim);font-size:16px;max-width:520px;margin-bottom:32px;line-height:1.7;}
+.sample-preview{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;}
+.sample-preview-thumb{flex:1;min-width:120px;aspect-ratio:1;border-radius:10px;background-size:cover;background-position:center;border:1px solid var(--border);}
+
+/* Features grid */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.feature-card{padding:32px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s ease;}
+.feature-card:hover{transform:translateY(-4px);border-color:rgba(201,169,110,0.4);background:rgba(201,169,110,0.03);}
+.feature-icon{font-size:28px;margin-bottom:16px;display:inline-block;}
+.feature-card h3{font-size:20px;margin-bottom:10px;color:var(--gold-light);font-weight:500;}
+.feature-card p{font-size:14px;color:var(--text-dim);line-height:1.7;}
+
+/* Process steps */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step;}
+.step-card{padding:28px;border-radius:16px;border:1px solid var(--border);background:rgba(255,255,255,0.02);position:relative;border-top:2px solid var(--gold);}
+.step-card::before{counter-increment:step;content:counter(step,decimal-leading-zero);position:absolute;top:-16px;left:24px;background:var(--gold);color:#0a0a0f;font-family:var(--serif);font-weight:700;font-size:14px;padding:4px 12px;border-radius:100px;letter-spacing:1px;}
+.step-card h4{font-size:18px;margin-bottom:10px;color:var(--gold-light);font-weight:500;}
+.step-card p{font-size:13px;color:var(--text-dim);line-height:1.6;}
+
+/* Pricing tiers */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1040px;margin:0 auto;}
+.tier{display:block;padding:40px 32px;border-radius:20px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s;position:relative;color:inherit;cursor:pointer;}
+.tier:hover{transform:translateY(-6px);border-color:var(--gold);background:rgba(201,169,110,0.04);box-shadow:0 30px 60px rgba(0,0,0,0.4);}
+.tier.popular{border-color:rgba(201,169,110,0.45);background:linear-gradient(180deg,rgba(201,169,110,0.05) 0%,rgba(255,255,255,0.02) 100%);}
+.tier.popular::before{content:'Recommended';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#0a0a0f;padding:6px 22px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;box-shadow:0 6px 16px rgba(201,169,110,0.35);white-space:nowrap;}
+.tier-name{font-size:14px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;font-family:var(--sans);font-weight:600;}
+.tier-price{font-family:var(--serif);font-size:56px;color:var(--text);line-height:1;margin-bottom:6px;}
+.tier-price span{font-size:18px;color:var(--text-dim);font-weight:400;}
+.tier-tagline{font-style:italic;color:var(--gold-light);font-size:16px;font-family:var(--serif);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.tier-features{list-style:none;margin-bottom:32px;}
+.tier-features li{padding:10px 0;font-size:14px;color:var(--text);display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid rgba(255,255,255,0.04);}
+.tier-features li:last-child{border-bottom:none;}
+.tier-features li .check{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:rgba(201,169,110,0.15);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:2px;}
+.tier-cta{display:block;text-align:center;padding:14px;background:rgba(201,169,110,0.1);border:1px solid var(--gold);color:var(--gold);font-weight:600;border-radius:100px;transition:all .25s;font-size:14px;}
+.tier:hover .tier-cta{background:var(--gold);color:#0a0a0f;}
+
+/* Inline CTA */
+.inline-cta{max-width:700px;margin:56px auto 0;padding:48px;text-align:center;border-radius:24px;border:1px solid rgba(201,169,110,0.35);background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);box-shadow:0 30px 80px rgba(0,0,0,0.5);}
+.inline-cta h3{font-size:clamp(24px,3vw,32px);margin-bottom:12px;}
+.inline-cta h3 em{color:var(--gold);font-style:italic;}
+.inline-cta p{color:var(--text-dim);font-size:15px;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;}
+
+/* FAQ */
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{border-bottom:1px solid var(--border);padding:24px 0;}
+.faq-item summary{cursor:pointer;font-family:var(--serif);font-size:22px;font-weight:500;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;padding-right:8px;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';color:var(--gold);font-size:26px;font-family:var(--sans);font-weight:300;transition:transform .3s;}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item p{color:var(--text-dim);font-size:15px;line-height:1.8;padding-top:14px;}
+
+/* Big CTA */
+.final-cta{background:var(--gold);padding:100px 0;text-align:center;}
+.final-cta h2{color:#0a0a0f;font-size:clamp(32px,5vw,52px);margin-bottom:20px;font-family:var(--serif);}
+.final-cta p{color:rgba(10,10,15,0.75);font-size:17px;margin-bottom:36px;max-width:520px;margin-left:auto;margin-right:auto;}
+.final-cta .btn{background:#0a0a0f;color:var(--gold);font-size:16px;}
+.final-cta .btn:hover{background:#1a1a25;transform:translateY(-2px);}
+
+/* Footer */
+footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+.footer-grid h4{font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:20px;font-weight:600;}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:12px;}
+.footer-grid a{color:var(--text-dim);font-size:14px;transition:color .2s;}
+.footer-grid a:hover{color:var(--gold-light);}
+.footer-bottom{padding-top:32px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--text-dim);}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+@media(max-width:900px){
+  nav.top .nav-pills{display:none;}
+  nav.top .inner{height:64px;}
+  section{padding:80px 0;}
+  .features-grid{grid-template-columns:1fr;}
+  .steps-grid{grid-template-columns:1fr 1fr;}
+  .pricing-grid{grid-template-columns:1fr;max-width:400px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .sample-wrap{padding:32px 24px;}
+}
+@media(max-width:500px){
+  .steps-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+<div class="container inner">
+  <a href="https://nichetoolkithub.com/" class="logo">Niche<span>ToolkitHub</span></a>
+  <ul class="nav-pills">
+    <li><a href="#sample">See a Sample</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#pricing" class="active">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="contact.html?service=not-sure" class="cta-nav">Email Me to Set Up a Call</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+  <span class="hero-eyebrow">Social Media · Done-For-You</span>
+  <h1>Stop stressing about social media.<br><em>Start posting consistently.</em></h1>
+  <p>Monthly content built for small businesses that don't have time to post. 20 posts, AI-designed visuals, captions, hashtags — ready to go, delivered on time, every month.</p>
+  <div class="hero-actions">
+    <a href="#sample" class="btn btn-gold btn-lg">See a Real Sample</a>
+    <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
+  </div>
+</div>
+</header>
+
+<!-- SAMPLE PREVIEW -->
+<section id="sample">
+<div class="container">
+  <div class="text-center" style="margin-bottom:56px;">
+    <span class="section-eyebrow">See Exactly What You Get</span>
+    <h2 class="section-title">A real <em>one-month package</em> — built for a landscaping business.</h2>
+    <p class="section-lead">This is an actual sample package I built for a mountain-landscaping company. Click through to see all 20 posts, the content calendar, the AI-generated images, and the hashtag research. No fluff — this is the deliverable.</p>
+  </div>
+
+  <div class="sample-wrap">
+    <span class="sample-badge">Full Sample · 20 Posts · 30-Day Calendar</span>
+    <h3>Landscaping — <em>Sample Content Package</em></h3>
+    <p>Built exactly as a real customer would receive it: 20 posts mapped to a full month, with AI-generated landscape imagery, captions tuned to the business, hashtag strategy, and posting recommendations.</p>
+    <div class="sample-preview">
+      <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=400&q=80')"></div>
+      <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=400&q=80')"></div>
+      <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=400&q=80')"></div>
+      <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80')"></div>
+    </div>
+    <a href="samples/landscaping-sample.html" target="_blank" rel="noopener" class="btn btn-gold">Open the Full Sample →</a>
+  </div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="bg-alt">
+<div class="container">
+  <div class="text-center" style="margin-bottom:64px;">
+    <span class="section-eyebrow">What's Included</span>
+    <h2 class="section-title">Everything you need to <em>show up</em> every day.</h2>
+    <p class="section-lead">Every package is custom-built for your specific business — not generic templates, not stock quotes, not recycled trends.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#128196;</span>
+      <h3>20 Custom Posts / Month</h3>
+      <p>A full month of content — roughly five posts a week — all written specifically for your business, voice, and audience.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#127912;</span>
+      <h3>AI-Designed Imagery</h3>
+      <p>Every post comes paired with a custom AI-generated image, designed to feel cohesive and on-brand — not stock-photo recycled.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#128197;</span>
+      <h3>30-Day Content Calendar</h3>
+      <p>A full calendar tells you what to post when — mapped to best practices, your industry, and seasonal relevance.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#35;</span>
+      <h3>Hashtag Strategy</h3>
+      <p>Researched hashtag sets for each post — a mix of big, medium, and niche tags that match your market and location.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#127919;</span>
+      <h3>5 Content Pillars</h3>
+      <p>Every month covers the five proven pillars: education, behind-the-scenes, social proof, promotion, and community.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">&#9878;&#65039;</span>
+      <h3>80/20 Value Mix</h3>
+      <p>80% of posts build trust and authority. 20% drive sales. Your feed stays engaging — not a constant sales pitch.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+<div class="container">
+  <div class="text-center" style="margin-bottom:64px;">
+    <span class="section-eyebrow">How It Works</span>
+    <h2 class="section-title">From <em>zero to posting</em> in under a week.</h2>
+  </div>
+
+  <div class="steps-grid">
+    <div class="step-card reveal">
+      <h4>Quick Call</h4>
+      <p>15-minute intake. I learn your business, voice, offerings, and the audience you serve.</p>
+    </div>
+    <div class="step-card reveal">
+      <h4>I Build Your Package</h4>
+      <p>Within 5 business days: 20 posts, images, captions, hashtags, calendar — custom to your business.</p>
+    </div>
+    <div class="step-card reveal">
+      <h4>You Review</h4>
+      <p>You approve the batch or request edits. Two rounds of revisions included on everything.</p>
+    </div>
+    <div class="step-card reveal">
+      <h4>Post (or I Do It)</h4>
+      <p>You post yourself, or pick a higher tier and I schedule / publish for you. Your call.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="bg-alt">
+<div class="container">
+  <div class="text-center" style="margin-bottom:64px;">
+    <span class="section-eyebrow">Monthly Plans</span>
+    <h2 class="section-title">Pick the level of <em>hands-off</em> you need.</h2>
+    <p class="section-lead">Every tier includes the same content quality — 20 custom posts per month with AI imagery, captions, and hashtags. The tier decides how much of the posting work I handle.</p>
+  </div>
+
+  <div class="pricing-grid">
+
+    <a href="contact.html?service=content-only" class="tier">
+      <div class="tier-name">Content Only</div>
+      <div class="tier-price">$297<span>/mo</span></div>
+      <div class="tier-tagline">I create it. You post it.</div>
+      <ul class="tier-features">
+        <li><span class="check">&#10003;</span>20 custom posts per month</li>
+        <li><span class="check">&#10003;</span>AI-designed images for each post</li>
+        <li><span class="check">&#10003;</span>Captions + hashtag sets</li>
+        <li><span class="check">&#10003;</span>30-day content calendar</li>
+        <li><span class="check">&#10003;</span>2 rounds of revisions</li>
+        <li><span class="check">&#10003;</span>Delivered once per month</li>
+      </ul>
+      <span class="tier-cta">Start with Content Only →</span>
+    </a>
+
+    <a href="contact.html?service=content-scheduling" class="tier popular">
+      <div class="tier-name">Content + Scheduling</div>
+      <div class="tier-price">$497<span>/mo</span></div>
+      <div class="tier-tagline">I schedule. You approve.</div>
+      <ul class="tier-features">
+        <li><span class="check">&#10003;</span>Everything in Content Only</li>
+        <li><span class="check">&#10003;</span>Posts pre-scheduled for you</li>
+        <li><span class="check">&#10003;</span>Optimal-time posting strategy</li>
+        <li><span class="check">&#10003;</span>Approval dashboard access</li>
+        <li><span class="check">&#10003;</span>Monthly review + tweaks</li>
+        <li><span class="check">&#10003;</span>Caption A/B testing</li>
+      </ul>
+      <span class="tier-cta">Start with Scheduling →</span>
+    </a>
+
+    <a href="contact.html?service=full-management" class="tier">
+      <div class="tier-name">Full Management</div>
+      <div class="tier-price">$797<span>/mo</span></div>
+      <div class="tier-tagline">Completely hands-off.</div>
+      <ul class="tier-features">
+        <li><span class="check">&#10003;</span>Everything in Content + Scheduling</li>
+        <li><span class="check">&#10003;</span>Full posting on your behalf</li>
+        <li><span class="check">&#10003;</span>Community engagement + reply management</li>
+        <li><span class="check">&#10003;</span>Monthly performance report</li>
+        <li><span class="check">&#10003;</span>Priority turnaround</li>
+        <li><span class="check">&#10003;</span>Quarterly strategy call</li>
+      </ul>
+      <span class="tier-cta">Start Full Management →</span>
+    </a>
+
+  </div>
+
+  <!-- Inline CTA under pricing -->
+  <div class="inline-cta">
+    <h3>Not sure which tier is right? <em>Let's talk.</em></h3>
+    <p>Send me a quick note about your business and I'll help you figure out what actually fits. No pressure — just a straight conversation.</p>
+    <a href="contact.html?service=not-sure" class="btn btn-gold btn-lg">&#128231; Email Me to Set Up a Call</a>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<div class="container">
+  <div class="text-center" style="margin-bottom:56px;">
+    <span class="section-eyebrow">Frequently Asked</span>
+    <h2 class="section-title">Things people <em>always ask.</em></h2>
+  </div>
+
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>What platforms does this cover?</summary>
+      <p>Primarily Instagram and Facebook, which is where most small local businesses get the best ROI. Content is delivered in a format that also works for LinkedIn and TikTok with minimal adjustment. If you have a specific platform in mind, mention it when you reach out.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How custom is the content — is it AI-generated slop?</summary>
+      <p>Every package is hand-built for your specific business. AI is used for imagery (faster and cheaper than stock or photoshoots) and as a writing assist, but I personally review, edit, and approve every single post before delivery. Nothing ships that doesn't sound like you.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How long is the commitment?</summary>
+      <p>Month-to-month. Cancel anytime with 30 days notice. No annual contracts, no lock-in. Most clients stay because the content keeps working.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What if I don't like a post?</summary>
+      <p>Every tier includes two rounds of revisions on any post. If something isn't landing, send it back. If something really isn't working, I'll replace it at no extra cost.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you work with any industry?</summary>
+      <p>I focus on small service-based local businesses — landscapers, home services, trades, local shops, wellness practices, beauty and salon, real estate agents. If you're unsure whether your business fits, ask me on the intake call.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I upgrade or downgrade tiers?</summary>
+      <p>Anytime. Change tiers between monthly deliveries — no penalty, no paperwork.</p>
+    </details>
+  </div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+<div class="container">
+  <h2>Ready to stop stressing about posting?</h2>
+  <p>Send me a message about your business and I'll reply within a few hours. No pressure, no sales script.</p>
+  <a href="contact.html?service=not-sure" class="btn btn-lg">&#128231; Email Me to Set Up a Call</a>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <h4>NicheToolkitHub</h4>
+      <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;">Done-for-you marketing services and business toolkits for small, niche businesses.</p>
+      <p style="font-size:13px;color:var(--text-dim);">Built by <a href="https://www.etsy.com/shop/nichetoolkits" style="color:var(--gold);">Niche Toolkits</a> · Castle Rock, CO</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="social-media-package.html">Social Media Package</a></li>
+        <li><a href="contact.html">Start a Conversation</a></li>
+        <li><a href="https://www.etsy.com/shop/nichetoolkits">Etsy Shop</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://nichetoolkithub.com/">Home</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:nichetoolkitsshop@gmail.com">Email</a></li>
+        <li><a href="https://x.com/nichetoolkits">X / Twitter</a></li>
+        <li><a href="https://facebook.com/profile.php?id=61572232181893">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 NicheToolkitHub · Ryan Smith. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('in'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const nav = document.querySelector('nav.top');
+window.addEventListener('scroll', () => {
+  nav.style.background = window.scrollY > 80 ? 'rgba(10,10,15,0.92)' : 'rgba(10,10,15,0.6)';
+});
+
+const sections = document.querySelectorAll('section[id]');
+const pills = document.querySelectorAll('.nav-pills a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id; });
+  pills.forEach(p => {
+    p.classList.remove('active');
+    if (p.getAttribute('href') === '#' + current) p.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>

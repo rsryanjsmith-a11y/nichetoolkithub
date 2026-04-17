@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Niche Toolkits</title>
+<meta name="description" content="Send a quick note about your business. I read every message and reply within a few hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--bg-alt:#12121a;--gold:#c9a96e;--gold-light:#e6cfa1;--text:#f5f5f7;--text-dim:#a8a8b3;--border:rgba(201,169,110,0.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+/* Nav */
+nav.top{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,15,0.85);border-bottom:1px solid var(--border);}
+nav.top .inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+nav.top .logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);white-space:nowrap;}
+nav.top .logo span{color:var(--text);}
+nav.top .nav-pills{display:flex;gap:8px;list-style:none;align-items:center;}
+nav.top .nav-pills a{font-size:13px;color:var(--text-dim);padding:8px 18px;border:1px solid transparent;border-radius:999px;transition:all .25s;font-weight:500;white-space:nowrap;}
+nav.top .nav-pills a:hover{border-color:var(--border);color:var(--gold-light);}
+nav.top .nav-pills a.active{border-color:var(--gold);color:var(--gold);}
+nav.top .cta-nav{background:var(--gold);color:#0a0a0f;padding:10px 22px;border-radius:999px;font-weight:600;font-size:13px;white-space:nowrap;}
+
+/* Hero */
+header.intro{padding:160px 24px 80px;text-align:center;background:linear-gradient(180deg,#0a0a0f 0%,#0f0f17 100%);}
+.intro .eyebrow{display:inline-block;padding:8px 20px;border:1px solid var(--border);border-radius:999px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:28px;}
+.intro h1{font-size:clamp(36px,5.5vw,64px);margin-bottom:20px;max-width:720px;margin-left:auto;margin-right:auto;}
+.intro h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.intro p{font-size:17px;color:var(--text-dim);max-width:580px;margin:0 auto;line-height:1.7;}
+
+/* Form wrap */
+.form-section{padding:0 0 120px;}
+.form-wrap{max-width:720px;margin:-40px auto 0;background:linear-gradient(180deg,#14141e 0%,#0f0f17 100%);border:1px solid var(--border);border-radius:24px;padding:56px 48px;position:relative;box-shadow:0 40px 100px rgba(0,0,0,0.6);}
+
+/* Banners */
+.form-banner{display:none;padding:18px 22px;margin-bottom:28px;border-radius:12px;font-size:14px;line-height:1.6;}
+.form-banner-success{background:rgba(201,169,110,0.1);color:var(--gold-light);border:1px solid var(--gold);}
+.form-banner-error{background:rgba(220,38,38,0.08);color:#fca5a5;border:1px solid rgba(220,38,38,0.3);}
+
+.selected-service{display:none;background:rgba(201,169,110,0.08);border:1px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:28px;font-size:13px;color:var(--gold-light);}
+.selected-service.visible{display:block;}
+.selected-service strong{text-transform:capitalize;color:var(--gold);}
+
+/* Form */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;}
+.form-field{margin-bottom:24px;}
+.form-field label{display:block;font-size:13px;color:var(--gold-light);margin-bottom:8px;font-weight:600;letter-spacing:0.5px;}
+.form-field .req{color:var(--gold);}
+.form-field input:not([type="radio"]):not([type="checkbox"]),
+.form-field textarea{width:100%;background:rgba(10,10,15,0.6);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--text);font-family:inherit;font-size:15px;transition:all .2s;}
+.form-field input:not([type="radio"]):not([type="checkbox"]):focus,
+.form-field textarea:focus{outline:none;border-color:var(--gold);background:rgba(10,10,15,0.8);box-shadow:0 0 0 3px rgba(201,169,110,0.1);}
+.form-field textarea{min-height:140px;resize:vertical;line-height:1.6;}
+.form-field .help{font-size:12px;color:var(--text-dim);margin-top:8px;font-style:italic;}
+
+/* Radio group — custom gold circle, no native control */
+.form-radio-group{display:flex;flex-direction:column;gap:10px;}
+.form-radio-group label{position:relative;display:flex;align-items:flex-start;gap:14px;padding:16px 20px;background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:12px;cursor:pointer;transition:all .2s ease;font-size:14px;color:var(--text);font-weight:400;letter-spacing:0;line-height:1.5;}
+.form-radio-group label:hover{border-color:rgba(201,169,110,0.5);background:rgba(201,169,110,0.04);transform:translateX(2px);}
+.form-radio-group label:has(input:checked){border-color:var(--gold);background:rgba(201,169,110,0.1);box-shadow:0 4px 16px rgba(201,169,110,0.12);}
+/* Hide native radio, style our own circle */
+.form-radio-group input[type="radio"]{position:absolute;opacity:0;width:0;height:0;margin:0;padding:0;pointer-events:none;}
+.form-radio-group label::before{content:"";flex-shrink:0;width:20px;height:20px;border-radius:50%;border:2px solid var(--border);background:transparent;transition:all .2s ease;margin-top:1px;}
+.form-radio-group label:hover::before{border-color:rgba(201,169,110,0.6);}
+.form-radio-group label:has(input:checked)::before{border-color:var(--gold);background:radial-gradient(circle,var(--gold) 0%,var(--gold) 40%,transparent 45%);box-shadow:0 0 0 2px rgba(201,169,110,0.15);}
+.form-radio-group label span{flex:1;min-width:0;}
+.form-radio-group label:has(input:checked) span{color:var(--gold-light);}
+
+.form-submit-row{display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap;gap:16px;}
+.privacy-note{font-size:12px;color:var(--text-dim);}
+
+.btn-submit{background:var(--gold);color:#0a0a0f;padding:16px 36px;border-radius:999px;font-weight:600;font-size:15px;border:none;cursor:pointer;transition:all .25s;font-family:inherit;}
+.btn-submit:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,169,110,0.25);}
+.btn-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
+
+.alt-contact{text-align:center;margin-top:40px;color:var(--text-dim);font-size:14px;}
+.alt-contact a{color:var(--gold);border-bottom:1px solid rgba(201,169,110,0.3);}
+.alt-contact a:hover{color:var(--gold-light);}
+
+/* Footer */
+footer{background:#06060a;padding:60px 0 30px;border-top:1px solid var(--border);}
+.footer-inner{text-align:center;}
+.footer-inner .tagline{font-size:13px;color:var(--text-dim);margin-bottom:16px;}
+.footer-inner .social{display:flex;gap:24px;justify-content:center;}
+.footer-inner .social a{color:var(--gold);font-size:13px;}
+.footer-inner .social a:hover{color:var(--gold-light);}
+
+@media(max-width:900px){
+  nav.top .nav-pills{display:none;}
+  nav.top .inner{height:64px;}
+  .form-wrap{padding:40px 28px;}
+  .form-row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+<div class="container inner">
+  <a href="https://nichetoolkithub.com/" class="logo">Niche<span>ToolkitHub</span></a>
+  <ul class="nav-pills">
+    <li><a href="https://nichetoolkithub.com/">Home</a></li>
+    <li><a href="social-media-package.html">Social Media Package</a></li>
+    <li><a href="https://nichetoolkits.etsy.com" target="_blank" rel="noopener">Etsy Shop</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="mailto:nichetoolkitsshop@gmail.com" class="cta-nav">Email Directly</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<header class="intro">
+<div class="container">
+  <span class="eyebrow">Get in Touch</span>
+  <h1>Let's talk about <em>your business.</em></h1>
+  <p>Send a quick note — what you're working on, what's getting in the way, and how you'd like to connect. I read every message personally and reply within a few hours.</p>
+</div>
+</header>
+
+<!-- FORM -->
+<section class="form-section">
+<div class="container">
+  <div class="form-wrap">
+
+    <div id="form-banner" class="form-banner"></div>
+
+    <div id="selected-service" class="selected-service">
+      You're inquiring about: <strong data-service-display>&nbsp;</strong>
+    </div>
+
+    <form
+      action="https://formspree.io/f/xeevabva"
+      method="POST"
+      data-formspree
+    >
+      <input type="hidden" name="_subject" value="[Niche Toolkits] New inquiry from website">
+      <input type="hidden" name="_replyto" id="replyto-field">
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Your Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Jane Doe">
+        </div>
+        <div class="form-field">
+          <label for="company">Company / Business</label>
+          <input type="text" id="company" name="company" placeholder="Mountain Landscape Design">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com"
+                 onchange="document.getElementById('replyto-field').value = this.value">
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Which service are you interested in? <span class="req">*</span></label>
+        <div class="form-radio-group">
+          <label>
+            <input type="radio" name="service" value="content-only" required>
+            <span>Content Only — $297/mo (I create it, you post)</span>
+          </label>
+          <label>
+            <input type="radio" name="service" value="content-scheduling">
+            <span>Content + Scheduling — $497/mo (I schedule, you approve)</span>
+          </label>
+          <label>
+            <input type="radio" name="service" value="full-management">
+            <span>Full Management — $797/mo (Completely hands-off)</span>
+          </label>
+          <label>
+            <input type="radio" name="service" value="not-sure">
+            <span>Not sure yet — help me figure out what fits</span>
+          </label>
+          <label>
+            <input type="radio" name="service" value="etsy-toolkits">
+            <span>Something about your Etsy toolkits</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Tell me about your business <span class="req">*</span></label>
+        <textarea id="message" name="message" required placeholder="What you do, where you're located, what's been getting in the way of posting consistently, and anything else I should know before replying."></textarea>
+        <div class="help">The more context you share, the more specific my reply will be.</div>
+      </div>
+
+      <div class="form-field">
+        <label>How would you rather follow up?</label>
+        <div class="form-radio-group">
+          <label>
+            <input type="radio" name="preferred_followup" value="email" checked>
+            <span>Keep the conversation in email</span>
+          </label>
+          <label>
+            <input type="radio" name="preferred_followup" value="call">
+            <span>Set up a 15-minute call</span>
+          </label>
+          <label>
+            <input type="radio" name="preferred_followup" value="either">
+            <span>Either works — you pick</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Honeypot -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-submit-row">
+        <span class="privacy-note">Your info stays with me. Never shared, never spammed.</span>
+        <button type="submit" class="btn-submit">Send Message →</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="alt-contact">
+    Prefer direct email? <a href="mailto:nichetoolkitsshop@gmail.com">nichetoolkitsshop@gmail.com</a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footer-inner">
+  <div class="tagline">&copy; 2026 Niche Toolkits · Ryan Smith · Castle Rock, CO</div>
+  <div class="social">
+    <a href="https://x.com/nichetoolkits" target="_blank" rel="noopener">X</a>
+    <a href="https://facebook.com/profile.php?id=61572232181893" target="_blank" rel="noopener">Facebook</a>
+    <a href="mailto:nichetoolkitsshop@gmail.com">Email</a>
+  </div>
+</div>
+</footer>
+
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get('service');
+
+  // Pre-fill service radio from query string
+  if (service) {
+    const normalized = service.toLowerCase().replace(/[-_\s]+/g, '');
+    document.querySelectorAll('input[name="service"]').forEach((radio) => {
+      const val = radio.value.toLowerCase().replace(/[-_\s]+/g, '');
+      if (val === normalized || val.includes(normalized) || normalized.includes(val)) {
+        radio.checked = true;
+      }
+    });
+    if (service !== 'not-sure') {
+      const el = document.getElementById('selected-service');
+      const display = el.querySelector('[data-service-display]');
+      display.textContent = service.replace(/-/g, ' ');
+      el.classList.add('visible');
+    }
+  }
+
+  // Show success banner if arriving back via ?sent=1
+  if (params.get('sent') === '1') {
+    const banner = document.getElementById('form-banner');
+    banner.className = 'form-banner form-banner-success';
+    banner.innerHTML = '<strong>Thanks — your message landed in my inbox.</strong><br>I\'ll reply within a few hours.';
+    banner.style.display = 'block';
+  }
+
+  // Handle form submission via fetch
+  const form = document.querySelector('form[data-formspree]');
+  if (!form) return;
+  const banner = document.getElementById('form-banner');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn ? submitBtn.textContent : '';
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!submitBtn) return;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        if (banner) {
+          banner.className = 'form-banner form-banner-success';
+          banner.innerHTML = '<strong>Thanks — your message landed in my inbox.</strong><br>I\'ll reply within a few hours. Check your email for a confirmation.';
+          banner.style.display = 'block';
+          banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        submitBtn.textContent = 'Sent ✓';
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (err) {
+      if (banner) {
+        banner.className = 'form-banner form-banner-error';
+        banner.innerHTML = '<strong>Something went wrong.</strong> Please email me directly at <a href="mailto:nichetoolkitsshop@gmail.com">nichetoolkitsshop@gmail.com</a>.';
+        banner.style.display = 'block';
+      }
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalBtnText;
+    }
+  });
+})();
+</script>
+</body>
+</html>
