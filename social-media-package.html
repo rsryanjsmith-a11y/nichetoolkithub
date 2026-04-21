@@ -3,8 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Social Media Content Package — Done-For-You Posts, Captions & Scheduling | NicheToolkitHub</title>
+<title>Social Media Content Package ‚Äî Done-For-You Posts, Captions & Scheduling | NicheToolkitHub</title>
 <meta name="description" content="Monthly done-for-you social media content for small businesses. 20 posts per month with AI-designed images, captions, hashtags, and optional full scheduling. From $297/mo.">
+
+<!-- SEO:BLOCK -->
+<link rel="canonical" href="https://nichetoolkithub.com/social-media-package.html">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Niche Toolkits">
+<meta property="og:title" content="Done-For-You Social Media Content Package | Niche Toolkits">
+<meta property="og:description" content="Monthly AI-designed social media posts, captions, and scheduling for service businesses. 20 posts/mo from $297. Three tiers. Launch this week.">
+<meta property="og:url" content="https://nichetoolkithub.com/social-media-package.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@nichetoolkits">
+<meta name="twitter:title" content="Done-For-You Social Media Content Package | Niche Toolkits">
+<meta name="twitter:description" content="Monthly AI-designed social media posts, captions, and scheduling for service businesses. 20 posts/mo from $297. Three tiers. Launch this week.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="Niche Toolkits">
+<meta name="theme-color" content="#0a0a0f">
+<!-- /SEO:BLOCK -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -86,16 +106,16 @@ section{padding:120px 0;position:relative;}
 .step-card p{font-size:13px;color:var(--text-dim);line-height:1.6;}
 
 /* Pricing tiers */
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1040px;margin:0 auto;}
-.tier{display:block;padding:40px 32px;border-radius:20px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s;position:relative;color:inherit;cursor:pointer;}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1280px;margin:0 auto;}
+.tier{display:flex;flex-direction:column;padding:40px 32px;border-radius:20px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all .35s;position:relative;color:inherit;cursor:pointer;}
 .tier:hover{transform:translateY(-6px);border-color:var(--gold);background:rgba(201,169,110,0.04);box-shadow:0 30px 60px rgba(0,0,0,0.4);}
 .tier.popular{border-color:rgba(201,169,110,0.45);background:linear-gradient(180deg,rgba(201,169,110,0.05) 0%,rgba(255,255,255,0.02) 100%);}
 .tier.popular::before{content:'Recommended';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#0a0a0f;padding:6px 22px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;box-shadow:0 6px 16px rgba(201,169,110,0.35);white-space:nowrap;}
-.tier-name{font-size:14px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;font-family:var(--sans);font-weight:600;}
+.tier-name{font-size:14px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;font-family:var(--sans);font-weight:600;line-height:1.4;min-height:2.8em;display:flex;align-items:flex-start;}
 .tier-price{font-family:var(--serif);font-size:56px;color:var(--text);line-height:1;margin-bottom:6px;}
 .tier-price span{font-size:18px;color:var(--text-dim);font-weight:400;}
-.tier-tagline{font-style:italic;color:var(--gold-light);font-size:16px;font-family:var(--serif);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);}
-.tier-features{list-style:none;margin-bottom:32px;}
+.tier-tagline{font-style:italic;color:var(--gold-light);font-size:16px;font-family:var(--serif);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);min-height:2.8em;}
+.tier-features{list-style:none;margin-bottom:32px;flex:1;}
 .tier-features li{padding:10px 0;font-size:14px;color:var(--text);display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid rgba(255,255,255,0.04);}
 .tier-features li:last-child{border-bottom:none;}
 .tier-features li .check{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:rgba(201,169,110,0.15);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:2px;}
@@ -138,13 +158,16 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
 .reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 
+@media(max-width:1100px){
+  .pricing-grid{grid-template-columns:repeat(2,1fr);max-width:720px;}
+}
 @media(max-width:900px){
   nav.top .nav-pills{display:none;}
   nav.top .inner{height:64px;}
   section{padding:80px 0;}
   .features-grid{grid-template-columns:1fr;}
   .steps-grid{grid-template-columns:1fr 1fr;}
-  .pricing-grid{grid-template-columns:1fr;max-width:400px;}
+  .pricing-grid{grid-template-columns:1fr;max-width:420px;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .sample-wrap{padding:32px 24px;}
 }
@@ -152,6 +175,48 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
   .steps-grid{grid-template-columns:1fr;}
 }
 </style>
+<!-- SEO:BLOCK -->-LD
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Done-For-You Social Media Content Package",
+  "url": "https://nichetoolkithub.com/social-media-package.html",
+  "provider": {
+    "@id": "https://nichetoolkithub.com/#organization"
+  },
+  "serviceType": "Monthly social media content subscription",
+  "description": "Monthly done-for-you social media content for service-based small businesses: 20 AI-designed posts per month with captions, hashtags, and optional full scheduling.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "297",
+    "highPrice": "597",
+    "offerCount": 3
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nichetoolkithub.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Social Media Package",
+      "item": "https://nichetoolkithub.com/social-media-package.html"
+    }
+  ]
+}
+</script>
+<!-- /SEO:BLOCK-LD -->
 </head>
 <body>
 
@@ -174,9 +239,9 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
 <div class="hero-bg"></div>
 <div class="hero-overlay"></div>
 <div class="hero-content">
-  <span class="hero-eyebrow">Social Media · Done-For-You</span>
-  <h1>Stop stressing about social media.<br><em>Start posting consistently.</em></h1>
-  <p>Monthly content built for small businesses that don't have time to post. 20 posts, AI-designed visuals, captions, hashtags — ready to go, delivered on time, every month.</p>
+  <span class="hero-eyebrow">AI Marketing for Home-Service Pros</span>
+  <h1>More booked jobs.<br><em>Less time on admin.</em></h1>
+  <p>We run the AI-powered marketing, content, and lead-nurture systems that fill your calendar ‚Äî so you stay in the field doing what you do best. 20 custom posts a month, automated follow-ups, SEO content, and optional full-stack growth support.</p>
   <div class="hero-actions">
     <a href="#sample" class="btn btn-gold btn-lg">See a Real Sample</a>
     <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
@@ -189,13 +254,13 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
 <div class="container">
   <div class="text-center" style="margin-bottom:56px;">
     <span class="section-eyebrow">See Exactly What You Get</span>
-    <h2 class="section-title">A real <em>one-month package</em> — built for a landscaping business.</h2>
-    <p class="section-lead">This is an actual sample package I built for a mountain-landscaping company. Click through to see all 20 posts, the content calendar, the AI-generated images, and the hashtag research. No fluff — this is the deliverable.</p>
+    <h2 class="section-title">A real <em>one-month package</em> ‚Äî built for a landscaping business.</h2>
+    <p class="section-lead">This is an actual sample package I built for a mountain-landscaping company. Click through to see all 20 posts, the content calendar, the AI-generated images, and the hashtag research. No fluff ‚Äî this is the deliverable.</p>
   </div>
 
   <div class="sample-wrap">
-    <span class="sample-badge">Full Sample · 20 Posts · 30-Day Calendar</span>
-    <h3>Landscaping — <em>Sample Content Package</em></h3>
+    <span class="sample-badge">Full Sample ¬∑ 20 Posts ¬∑ 30-Day Calendar</span>
+    <h3>Landscaping ‚Äî <em>Sample Content Package</em></h3>
     <p>Built exactly as a real customer would receive it: 20 posts mapped to a full month, with AI-generated landscape imagery, captions tuned to the business, hashtag strategy, and posting recommendations.</p>
     <div class="sample-preview">
       <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=400&q=80')"></div>
@@ -203,7 +268,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
       <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=400&q=80')"></div>
       <div class="sample-preview-thumb" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80')"></div>
     </div>
-    <a href="samples/landscaping-sample.html" target="_blank" rel="noopener" class="btn btn-gold">Open the Full Sample →</a>
+    <a href="samples/landscaping-sample.html" target="_blank" rel="noopener" class="btn btn-gold">Open the Full Sample ‚Üí</a>
   </div>
 </div>
 </section>
@@ -214,29 +279,29 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
   <div class="text-center" style="margin-bottom:64px;">
     <span class="section-eyebrow">What's Included</span>
     <h2 class="section-title">Everything you need to <em>show up</em> every day.</h2>
-    <p class="section-lead">Every package is custom-built for your specific business — not generic templates, not stock quotes, not recycled trends.</p>
+    <p class="section-lead">Every package is custom-built for your specific business ‚Äî not generic templates, not stock quotes, not recycled trends.</p>
   </div>
 
   <div class="features-grid">
     <div class="feature-card reveal">
       <span class="feature-icon">&#128196;</span>
       <h3>20 Custom Posts / Month</h3>
-      <p>A full month of content — roughly five posts a week — all written specifically for your business, voice, and audience.</p>
+      <p>A full month of content ‚Äî roughly five posts a week ‚Äî all written specifically for your business, voice, and audience.</p>
     </div>
     <div class="feature-card reveal">
       <span class="feature-icon">&#127912;</span>
       <h3>AI-Designed Imagery</h3>
-      <p>Every post comes paired with a custom AI-generated image, designed to feel cohesive and on-brand — not stock-photo recycled.</p>
+      <p>Every post comes paired with a custom AI-generated image, designed to feel cohesive and on-brand ‚Äî not stock-photo recycled.</p>
     </div>
     <div class="feature-card reveal">
       <span class="feature-icon">&#128197;</span>
       <h3>30-Day Content Calendar</h3>
-      <p>A full calendar tells you what to post when — mapped to best practices, your industry, and seasonal relevance.</p>
+      <p>A full calendar tells you what to post when ‚Äî mapped to best practices, your industry, and seasonal relevance.</p>
     </div>
     <div class="feature-card reveal">
       <span class="feature-icon">&#35;</span>
       <h3>Hashtag Strategy</h3>
-      <p>Researched hashtag sets for each post — a mix of big, medium, and niche tags that match your market and location.</p>
+      <p>Researched hashtag sets for each post ‚Äî a mix of big, medium, and niche tags that match your market and location.</p>
     </div>
     <div class="feature-card reveal">
       <span class="feature-icon">&#127919;</span>
@@ -246,7 +311,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     <div class="feature-card reveal">
       <span class="feature-icon">&#9878;&#65039;</span>
       <h3>80/20 Value Mix</h3>
-      <p>80% of posts build trust and authority. 20% drive sales. Your feed stays engaging — not a constant sales pitch.</p>
+      <p>80% of posts build trust and authority. 20% drive sales. Your feed stays engaging ‚Äî not a constant sales pitch.</p>
     </div>
   </div>
 </div>
@@ -267,7 +332,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     </div>
     <div class="step-card reveal">
       <h4>I Build Your Package</h4>
-      <p>Within 5 business days: 20 posts, images, captions, hashtags, calendar — custom to your business.</p>
+      <p>Within 5 business days: 20 posts, images, captions, hashtags, calendar ‚Äî custom to your business.</p>
     </div>
     <div class="step-card reveal">
       <h4>You Review</h4>
@@ -286,8 +351,8 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
 <div class="container">
   <div class="text-center" style="margin-bottom:64px;">
     <span class="section-eyebrow">Monthly Plans</span>
-    <h2 class="section-title">Pick the level of <em>hands-off</em> you need.</h2>
-    <p class="section-lead">Every tier includes the same content quality — 20 custom posts per month with AI imagery, captions, and hashtags. The tier decides how much of the posting work I handle.</p>
+    <h2 class="section-title">Pick the level of <em>growth</em> you want.</h2>
+    <p class="section-lead">Every tier is built to book more jobs. Start with 20 AI-designed posts a month and scale all the way to a full Growth Partner engagement with lead-gen ads, automated follow-up, and a quarterly strategy call.</p>
   </div>
 
   <div class="pricing-grid">
@@ -295,7 +360,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     <a href="contact.html?service=content-only" class="tier">
       <div class="tier-name">Content Only</div>
       <div class="tier-price">$297<span>/mo</span></div>
-      <div class="tier-tagline">I create it. You post it.</div>
+      <div class="tier-tagline">We create it. You post it.</div>
       <ul class="tier-features">
         <li><span class="check">&#10003;</span>20 custom posts per month</li>
         <li><span class="check">&#10003;</span>AI-designed images for each post</li>
@@ -304,13 +369,13 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
         <li><span class="check">&#10003;</span>2 rounds of revisions</li>
         <li><span class="check">&#10003;</span>Delivered once per month</li>
       </ul>
-      <span class="tier-cta">Start with Content Only →</span>
+      <span class="tier-cta">Start with Content Only ‚Üí</span>
     </a>
 
-    <a href="contact.html?service=content-scheduling" class="tier popular">
+    <a href="contact.html?service=content-scheduling" class="tier">
       <div class="tier-name">Content + Scheduling</div>
       <div class="tier-price">$497<span>/mo</span></div>
-      <div class="tier-tagline">I schedule. You approve.</div>
+      <div class="tier-tagline">We schedule. You approve.</div>
       <ul class="tier-features">
         <li><span class="check">&#10003;</span>Everything in Content Only</li>
         <li><span class="check">&#10003;</span>Posts pre-scheduled for you</li>
@@ -319,13 +384,13 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
         <li><span class="check">&#10003;</span>Monthly review + tweaks</li>
         <li><span class="check">&#10003;</span>Caption A/B testing</li>
       </ul>
-      <span class="tier-cta">Start with Scheduling →</span>
+      <span class="tier-cta">Start with Scheduling ‚Üí</span>
     </a>
 
-    <a href="contact.html?service=full-management" class="tier">
+    <a href="contact.html?service=full-management" class="tier popular">
       <div class="tier-name">Full Management</div>
       <div class="tier-price">$797<span>/mo</span></div>
-      <div class="tier-tagline">Completely hands-off.</div>
+      <div class="tier-tagline">Completely hands-off social.</div>
       <ul class="tier-features">
         <li><span class="check">&#10003;</span>Everything in Content + Scheduling</li>
         <li><span class="check">&#10003;</span>Full posting on your behalf</li>
@@ -334,7 +399,23 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
         <li><span class="check">&#10003;</span>Priority turnaround</li>
         <li><span class="check">&#10003;</span>Quarterly strategy call</li>
       </ul>
-      <span class="tier-cta">Start Full Management →</span>
+      <span class="tier-cta">Start Full Management ‚Üí</span>
+    </a>
+
+    <a href="contact.html?service=growth-partner" class="tier" style="border-color:rgba(201,169,110,0.55);background:linear-gradient(180deg,rgba(201,169,110,0.07) 0%,rgba(255,255,255,0.02) 100%);">
+      <div class="tier-name" style="color:var(--gold-light);">Growth Partner</div>
+      <div class="tier-price">$1,497<span>/mo</span></div>
+      <div class="tier-tagline">Your AI marketing team.</div>
+      <ul class="tier-features">
+        <li><span class="check">&#10003;</span>Everything in Full Management</li>
+        <li><span class="check">&#10003;</span>Facebook &amp; Google lead-gen ad creative</li>
+        <li><span class="check">&#10003;</span>Automated lead follow-up (email + SMS)</li>
+        <li><span class="check">&#10003;</span>SEO-optimized monthly blog post</li>
+        <li><span class="check">&#10003;</span>Review-request automations</li>
+        <li><span class="check">&#10003;</span>Bi-weekly 30-min check-in call</li>
+        <li><span class="check">&#10003;</span>Custom AI prompts built for your business</li>
+      </ul>
+      <span class="tier-cta">Become a Growth Partner ‚Üí</span>
     </a>
 
   </div>
@@ -342,7 +423,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
   <!-- Inline CTA under pricing -->
   <div class="inline-cta">
     <h3>Not sure which tier is right? <em>Let's talk.</em></h3>
-    <p>Send me a quick note about your business and I'll help you figure out what actually fits. No pressure — just a straight conversation.</p>
+    <p>Send me a quick note about your business and I'll help you figure out what actually fits. No pressure ‚Äî just a straight conversation.</p>
     <a href="contact.html?service=not-sure" class="btn btn-gold btn-lg">&#128231; Email Me to Set Up a Call</a>
   </div>
 </div>
@@ -362,7 +443,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
       <p>Primarily Instagram and Facebook, which is where most small local businesses get the best ROI. Content is delivered in a format that also works for LinkedIn and TikTok with minimal adjustment. If you have a specific platform in mind, mention it when you reach out.</p>
     </details>
     <details class="faq-item">
-      <summary>How custom is the content — is it AI-generated slop?</summary>
+      <summary>How custom is the content ‚Äî is it AI-generated slop?</summary>
       <p>Every package is hand-built for your specific business. AI is used for imagery (faster and cheaper than stock or photoshoots) and as a writing assist, but I personally review, edit, and approve every single post before delivery. Nothing ships that doesn't sound like you.</p>
     </details>
     <details class="faq-item">
@@ -375,11 +456,11 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     </details>
     <details class="faq-item">
       <summary>Do you work with any industry?</summary>
-      <p>I focus on small service-based local businesses — landscapers, home services, trades, local shops, wellness practices, beauty and salon, real estate agents. If you're unsure whether your business fits, ask me on the intake call.</p>
+      <p>I focus on small service-based local businesses ‚Äî landscapers, home services, trades, local shops, wellness practices, beauty and salon, real estate agents. If you're unsure whether your business fits, ask me on the intake call.</p>
     </details>
     <details class="faq-item">
       <summary>Can I upgrade or downgrade tiers?</summary>
-      <p>Anytime. Change tiers between monthly deliveries — no penalty, no paperwork.</p>
+      <p>Anytime. Change tiers between monthly deliveries ‚Äî no penalty, no paperwork.</p>
     </details>
   </div>
 </div>
@@ -401,7 +482,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     <div>
       <h4>NicheToolkitHub</h4>
       <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:16px;">Done-for-you marketing services and business toolkits for small, niche businesses.</p>
-      <p style="font-size:13px;color:var(--text-dim);">Built by <a href="https://www.etsy.com/shop/nichetoolkits" style="color:var(--gold);">Niche Toolkits</a> · Castle Rock, CO</p>
+      <p style="font-size:13px;color:var(--text-dim);">Built by <a href="https://www.etsy.com/shop/nichetoolkits" style="color:var(--gold);">Niche Toolkits</a> ¬∑ Castle Rock, CO</p>
     </div>
     <div>
       <h4>Services</h4>
@@ -429,7 +510,7 @@ footer{background:#06060a;padding:80px 0 32px;border-top:1px solid var(--border)
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 NicheToolkitHub · Ryan Smith. All rights reserved.</p>
+    <p>&copy; 2026 NicheToolkitHub ¬∑ Ryan Smith. All rights reserved.</p>
   </div>
 </div>
 </footer>
